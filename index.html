@@ -9,13 +9,13 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1a1a; line-height: 1.6; }
 
-        /* 1. Stable Hero - 50/50 Split */
+        /* 1. The Hero - Dynamic & Stable */
         .hero-container {
             display: flex;
-            height: 50vh;
-            min-height: 400px;
             width: 100%;
             background-color: #000000;
+            /* Height is now flexible to prevent weird cropping */
+            min-height: 450px; 
             overflow: hidden;
         }
 
@@ -24,15 +24,14 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 0 8%;
+            padding: 60px 8%;
             background-color: #000000;
-            z-index: 2;
         }
 
         .name-brand {
-            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-size: clamp(2.5rem, 6vw, 5rem);
             font-weight: 900;
-            line-height: 0.9;
+            line-height: 0.85;
             letter-spacing: -2px;
             text-transform: uppercase;
             color: #ffffff;
@@ -40,94 +39,40 @@
 
         .subtitle {
             font-size: 0.9rem;
-            margin-top: 15px;
+            margin-top: 20px;
             color: #a855f7;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            letter-spacing: 4px;
             font-weight: 700;
         }
 
+        /* Photo Area */
         .hero-photo-wrapper {
             width: 50%;
             position: relative;
-            background-color: #000000;
+            display: flex;
+            align-items: center; /* Centers photo vertically */
+            justify-content: center;
         }
 
         .hero-photo-wrapper img {
             width: 100%;
             height: 100%;
+            /* 'Cover' ensures the box is filled, but we've increased height to show more face */
             object-fit: cover;
-            /* This centers your face perfectly in the right-side box */
-            object-position: center 22%; 
+            object-position: center center; 
             display: block;
         }
 
-        /* The Fade Overlay */
+        /* Subtle Fade */
         .hero-photo-wrapper::after {
             content: '';
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to right, #000000 0%, rgba(168, 85, 247, 0.1) 30%, rgba(0,0,0,0) 100%);
-            pointer-events: none;
+            background: linear-gradient(to right, #000000 0%, rgba(0,0,0,0) 40%);
         }
 
-        /* 2. Content Area */
+        /* 2. Content */
         .container { padding: 80px 8%; max-width: 1200px; margin: 0 auto; }
-        h2 { font-size: 2rem; font-weight: 900; margin-bottom: 30px; text-transform: uppercase; border-bottom: 8px solid #a855f7; display: inline-block; }
-        .lead-text { font-size: 1.4rem; margin-bottom: 60px; color: #333; max-width: 800px; }
-        .job-card { margin-bottom: 40px; padding-left: 20px; border-left: 4px solid #a855f7; }
-        .job-title { font-size: 1.4rem; font-weight: 900; text-transform: uppercase; }
-        .company-tag { font-weight: 700; color: #a855f7; font-size: 0.85rem; margin-bottom: 10px; text-transform: uppercase; }
-
-        /* 3. Footer */
-        .footer { background-color: #000; color: #fff; padding: 80px 8%; text-align: center; }
-        .btn { display: inline-block; padding: 18px 35px; background: #a855f7; color: #fff !important; text-decoration: none; font-weight: 900; text-transform: uppercase; margin: 10px; border-radius: 4px; }
-
-        @media (max-width: 768px) {
-            .hero-container { height: auto; flex-direction: column; }
-            .hero-branding { padding: 60px 8%; width: 100%; }
-            .hero-photo-wrapper { width: 100%; height: 350px; }
-            .hero-photo-wrapper img { object-position: center 20%; }
-        }
-    </style>
-</head>
-<body>
-
-    <section class="hero-container">
-        <div class="hero-branding">
-            <h1 class="name-brand">RENEE<br>BARTOS</h1>
-            <p class="subtitle">Operations • Success • Technical Strategy</p>
-        </div>
-        <div class="hero-photo-wrapper">
-            <img src="wmremove-transformed.png" alt="Renee Bartos">
-        </div>
-    </section>
-
-    <div class="container">
-        <h2>THE PHILOSOPHY</h2>
-        <p class="lead-text">
-            I bridge the gap between technical complexity and business value. With 11+ years in SaaS, FinTech, and PropTech, I find the friction before it becomes a problem.
-        </p>
-
-        <h2>SELECTED IMPACT</h2>
-        <div class="job-card">
-            <p class="job-title">Technical Operations Lead</p>
-            <p class="company-tag">ReportAll USA | 2022 – 2025</p>
-            <p>Built investigation protocols that reduced engineering escalations by 55% and accelerated resolution times by 75%.</p>
-        </div>
-        <div class="job-card">
-            <p class="job-title">Customer Operations Specialist</p>
-            <p class="company-tag">Northern Grace | 2017 – 2021</p>
-            <p>Mastered end-to-end lifecycle management for high-volume enterprise accounts with 100% data integrity.</p>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <h2 style="color: #ffffff; border-bottom-color: #a855f7;">LET'S CONNECT</h2>
-        <br><br>
-        <a href="https://www.linkedin.com/in/renee-bartos" class="btn">LinkedIn</a>
-        <a href="mailto:reneebartos@outlook.com" class="btn">Email Me</a>
-    </footer>
-
-</body>
-</html>
+        h2 { font-size: 2.2rem; font-weight: 900; margin-bottom: 35px; text-transform: uppercase; border-bottom: 10px solid #a855f7; display: inline-block; }
+        .lead-text { font
