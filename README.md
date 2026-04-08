@@ -1,76 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <style>
-  /* This section clears out GitHub's default junk */
+  /* This clears GitHub's narrow margins */
+  #readme, .markdown-body { 
+    max-width: 100% !important; 
+    padding: 0 !important; 
+    background: none !important;
+    border: none !important;
+  }
+  
   body { 
     margin: 0; 
     padding: 0; 
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-    background-color: #ffffff;
-    color: #000000;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1a1a1a;
   }
 
-  /* Big Bold Branding Header */
-  .header-container {
+  /* The Big Black Wix Header */
+  .hero {
     background-color: #000000;
     color: #ffffff;
-    padding: 100px 10%;
-    text-align: left;
+    padding: 100px 8%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  .name-big {
-    font-size: 80px;
+  .hero h1 {
+    font-size: clamp(3rem, 10vw, 6rem); /* Adjusts size based on screen */
     font-weight: 900;
-    line-height: 0.8;
+    line-height: 0.85;
     margin: 0;
     letter-spacing: -4px;
     text-transform: uppercase;
   }
 
-  .sub-title {
-    font-size: 20px;
-    margin-top: 20px;
-    letter-spacing: 2px;
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 25px;
     color: #888;
     text-transform: uppercase;
+    letter-spacing: 3px;
   }
 
-  /* Layout Sections */
-  .content-section {
-    padding: 80px 10%;
-    max-width: 1100px;
+  /* Wide White Content Area */
+  .section {
+    padding: 80px 8%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-transform: uppercase;
-    border-bottom: 10px solid #000;
+    border-bottom: 12px solid #000;
     display: inline-block;
   }
 
-  .description {
-    font-size: 22px;
-    line-height: 1.4;
-    margin-bottom: 60px;
+  .job {
+    margin-bottom: 50px;
+    padding-left: 30px;
+    border-left: 3px solid #e0e0e0;
   }
 
-  .job-entry {
-    margin-bottom: 40px;
-    border-left: 3px solid #000;
-    padding-left: 25px;
-  }
+  .job-title { font-weight: 900; font-size: 1.5rem; margin-bottom: 5px; }
+  .details { font-size: 1.1rem; color: #666; margin-bottom: 15px; }
 
-  .job-title { font-weight: bold; font-size: 24px; margin: 0; }
-  .company { font-size: 18px; color: #666; margin-bottom: 10px; }
-
-  /* Final Footer */
+  /* Buttons */
   .footer {
     background-color: #f4f4f4;
-    padding: 100px 10%;
+    padding: 100px 8%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .btn {
@@ -80,6 +83,7 @@
     color: #fff !important;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
     margin-right: 20px;
     text-transform: uppercase;
   }
@@ -87,36 +91,40 @@
 </head>
 <body>
 
-  <div class="header-container">
-    <h1 class="name-big">RENEE<br>BARTOS</h1>
-    <p class="sub-title">Technical Operations & Customer Success Leader</p>
+<div class="hero">
+  <h1>RENEE<br>BARTOS</h1>
+  <p>Technical Operations & Customer Success Leader</p>
+</div>
+
+<div class="section">
+  <h2>ABOUT</h2>
+  <p style="font-size: 1.5rem; max-width: 800px; line-height: 1.4;">
+    I turn technical friction into operational excellence. With 11+ years in <strong>SaaS, FinTech, and PropTech</strong>, I bridge the gap between high-value clients and engineering teams.
+  </p>
+</div>
+
+<div class="section" style="background-color: #fafafa;">
+  <h2>EXPERIENCE</h2>
+  
+  <div class="job">
+    <div class="job-title">Technical Operations & Customer Success Lead</div>
+    <div class="details">ReportAll USA | 2022 – 2025</div>
+    <p>Spearheaded enterprise migrations and reduced total customer escalations by 55%.</p>
   </div>
 
-  <div class="content-section">
-    <h2>Philosophy</h2>
-    <p class="description">Bridging the gap between technical systems and enterprise business value. 11+ years in SaaS, FinTech, and PropTech.</p>
-
-    <h2>Experience</h2>
-    
-    <div class="job-entry">
-      <p class="job-title">Technical Operations & Customer Success Lead</p>
-      <p class="company">ReportAll USA | 2022 – 2025</p>
-      <p>Reduced customer escalations by 55% and accelerated bug resolution by 75%.</p>
-    </div>
-
-    <div class="job-entry">
-      <p class="job-title">Customer Service & Operations</p>
-      <p class="company">Northern Grace | 2017 – 2021</p>
-      <p>Optimized order lifecycles and fulfillment for high-volume enterprise accounts.</p>
-    </div>
+  <div class="job">
+    <div class="job-title">Customer Service & Operations</div>
+    <div class="details">Northern Grace | 2017 – 2021</div>
+    <p>Managed full order lifecycles and improved retention through process optimization.</p>
   </div>
+</div>
 
-  <div class="footer">
-    <h2>Let's Connect</h2>
-    <br><br>
-    <a href="https://www.linkedin.com/in/renee-bartos" class="btn">LinkedIn</a>
-    <a href="mailto:reneebartos@outlook.com" class="btn">Email Me</a>
-  </div>
+<div class="footer">
+  <h2>CONNECT</h2>
+  <br>
+  <a href="https://www.linkedin.com/in/renee-bartos" class="btn">LinkedIn</a>
+  <a href="mailto:reneebartos@outlook.com" class="btn">Email Me</a>
+</div>
 
 </body>
 </html>
