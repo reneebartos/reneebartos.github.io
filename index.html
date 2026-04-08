@@ -48,16 +48,15 @@
             font-weight: 700;
         }
 
-        .hero-photo {
+       .hero-photo {
             width: 50%;
-            /* Try to load the PNG. If it fails, it stays black/purple */
-            background-image: url('wmremove-transformed.png'); 
+            /* This points directly to the source folder */
+            background-image: url('./wmremove-transformed.png'); 
             background-size: cover;
-            background-position: center top; /* Focus on the face */
+            background-position: center top;
             background-repeat: no-repeat;
             position: relative;
             background-color: #1a1a1a;
-        }
 
         .hero-photo::after {
             content: '';
