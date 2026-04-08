@@ -35,7 +35,7 @@
 
         .hero-right {
             width: 55%;
-            background: radial-gradient(circle at center, #2e1065 0%, #000000 70%); /* Subtle Purple Glow */
+            background: radial-gradient(circle at center, #2e1065 0%, #000000 70%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -65,11 +65,9 @@
             object-fit: contain; 
             display: block;
             z-index: 1;
-            /* Added a very slight purple drop shadow to help the photo pop */
             filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.2));
         }
 
-        /* The Purple-Tinted Fade */
         .hero-right::before {
             content: '';
             position: absolute;
@@ -83,7 +81,9 @@
         .container { padding: 60px 8%; max-width: 1100px; margin: 0 auto; }
         h2 { font-size: 1.8rem; font-weight: 900; margin-bottom: 25px; text-transform: uppercase; border-bottom: 6px solid #a855f7; display: inline-block; }
         .lead { font-size: 1.3rem; margin-bottom: 50px; color: #333; }
-        .card { margin-bottom: 35px; padding-left: 20px; border-left: 4px solid #a855f7; }
+        
+        /* Updated Card Styling for better separation */
+        .card { margin-bottom: 40px; padding: 25px; border-left: 4px solid #a855f7; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-radius: 0 8px 8px 0; }
         .card-h { font-size: 1.3rem; font-weight: 900; text-transform: uppercase; }
         .card-s { font-weight: 700; color: #a855f7; font-size: 0.8rem; margin-bottom: 8px; text-transform: uppercase; }
 
@@ -94,10 +94,8 @@
             .hero-container { flex-direction: column; height: auto; }
             .hero-left, .hero-right { width: 100%; }
             .hero-right { height: 400px; padding: 20px 0; }
-            .hero-right img { height: 100%; width: auto; }
         }
     </style>
-</head>
     <script>
     function toggleDetails(id) {
         const details = document.getElementById(id);
@@ -110,7 +108,8 @@
             btn.innerHTML = "Deep Dive ↓";
         }
     }
-</script>
+    </script>
+</head>
 <body>
 
     <div class="hero-container">
@@ -128,31 +127,32 @@
         <p class="lead">I view technical operations as a complete ecosystem where client relationships, rapid problem-solving, and data integrity are inseparable. Whether I'm engineering a workaround for a critical bug or drafting the missing documentation that scales a team, I am the 'go-to' strategist who turns operational friction into streamlined systems. I don't just identify what’s missing—I build it.</p>
 
         <h2>SELECTED IMPACT</h2>
+        
         <div class="card">
             <p class="card-h">Technical Operations Lead</p>
-            <p class="card-s">ReportAll USA - Remote | 2022 – 2025</p>
-            <p>Led technical account oversight and operational fulfillment for enterprise clients. Specialized in the post-sale lifecycle, ensuring seamless API integrations, CRM data integrity, and complex financial reconciliation without losing sight of the client relationship.</p>
+            <p class="card-s">ReportAll USA | 2022 – 2025</p>
+            <p>Led technical account oversight and operational fulfillment for enterprise clients. Specialized in the post-sale lifecycle, ensuring seamless API integrations, CRM data integrity, and complex financial reconciliation.</p>
             
             <button onclick="toggleDetails('reportall-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:10px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem;">Deep Dive ↓</button>
             
             <div id="reportall-deep" style="display:none; margin-top:15px; padding:15px; background:#f9f9f9; border-radius:4px; font-size:0.95rem; color:#444;">
-                <strong>Account Oversight:</strong> Managed the technical health of enterprise accounts, overseeing onboarding, API usage adjustments, and renewal logistics.<br><br>
+                <strong>Account Oversight:</strong> Managed technical health, onboarding, API usage adjustments, and renewal logistics for enterprise partners.<br><br>
                 <strong>System Architecture:</strong> Authored the "Salesforce Actions" framework and internal SOPs to ensure 100% data integrity and communication consistency.<br><br>
                 <strong>Revenue Ops:</strong> Directed Stripe/QuickBooks workflows, payment reconciliation, and state tax compliance for high-volume accounts.
             </div>
-        <div class="card">
+        </div>
+
+        <div class="card" style="border-left-color: #6b21a8;">
             <p class="card-h">Customer Operations Specialist</p>
-           <div class="card" style="border-top: 5px solid #a855f7; margin-top: 30px; position: relative;">
-            
             <p class="card-s">Northern Grace | 2020 – 2022</p>
             <p>Managed full-lifecycle fulfillment for high-volume enterprise accounts, focusing on data integrity, CRM auditing, and building the department’s first internal support playbooks.</p>
             
             <button onclick="toggleDetails('ng-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:10px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem;">Deep Dive ↓</button>
             
-            <div id="ng-deep" style="display:none; margin-top:15px; padding:15px; background:#f3f4f6; border-radius:4px; font-size:0.95rem; color:#444;">
-                <strong>Lifecycle Management:</strong> Directed the transition from onboarding to long-term retention for enterprise partners, ensuring all service milestones were met.<br><br>
-                <strong>Data Auditing:</strong> Maintained 100% data accuracy within the CRM, eliminating discrepancies between Sales and Operations teams.<br><br>
-                <strong>Process Engineering:</strong> Authored the "Go-To" reference manuals for common technical roadblocks, standardizing response times and resolution paths.
+            <div id="ng-deep" style="display:none; margin-top:15px; padding:15px; background:#f9f9f9; border-radius:4px; font-size:0.95rem; color:#444;">
+                <strong>Lifecycle Management:</strong> Directed the transition from onboarding to retention for enterprise partners, ensuring all service milestones were met.<br><br>
+                <strong>Data Auditing:</strong> Maintained 100% accuracy within the CRM, eliminating discrepancies between Sales and Operations.<br><br>
+                <strong>Process Engineering:</strong> Authored the "Go-To" reference manuals for technical roadblocks, standardizing resolution paths and team response times.
             </div>
         </div>
 
@@ -167,6 +167,9 @@
     <footer class="footer">
         <a href="https://www.linkedin.com/in/renee-bartos" class="btn">LinkedIn</a>
     </footer>
+
+</body>
+</html>
 
 </body>
 </html>
