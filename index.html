@@ -23,11 +23,12 @@
             flex-direction: column;
             justify-content: center;
             padding: 0 8%;
+            background-color: #000;
         }
 
         .hero-right {
             width: 55%;
-            background-color: #000; /* Solid black background */
+            background: radial-gradient(circle at center, #2e1065 0%, #000000 70%); /* Subtle Purple Glow */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -53,20 +54,22 @@
 
         .hero-right img {
             height: 100%;
-            width: auto; /* This prevents the "zoomed eyes" look */
+            width: auto;
             object-fit: contain; 
             display: block;
             z-index: 1;
+            /* Added a very slight purple drop shadow to help the photo pop */
+            filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.2));
         }
 
-        /* This creates the smooth fade from the black text area into your photo */
+        /* The Purple-Tinted Fade */
         .hero-right::before {
             content: '';
             position: absolute;
             top: 0; left: 0;
-            width: 150px; /* Width of the fade */
+            width: 150px;
             height: 100%;
-            background: linear-gradient(to right, #000, transparent);
+            background: linear-gradient(to right, #000, rgba(46, 16, 101, 0.2), transparent);
             z-index: 2;
         }
 
@@ -83,8 +86,8 @@
         @media (max-width: 768px) {
             .hero-container { flex-direction: column; height: auto; }
             .hero-left, .hero-right { width: 100%; }
-            .hero-right { height: 400px; }
-            .hero-right img { width: 100%; height: auto; }
+            .hero-right { height: 400px; padding: 20px 0; }
+            .hero-right img { height: 100%; width: auto; }
         }
     </style>
 </head>
