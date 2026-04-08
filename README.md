@@ -24,7 +24,7 @@
     margin: 20px 0; 
   }
 </style>
-
+### [Experience](#-professional-experience) | [Skills](#-the-toolkit) | [Projects](#-featured-project-deep-dive-investigation-protocol) | [Contact](#-lets-connect)
 # Renee Bartos
 ## Technical Operations & Customer Success Leader
 **Bridging the gap between complex technical systems and enterprise business value.**
