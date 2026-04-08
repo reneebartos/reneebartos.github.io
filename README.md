@@ -1,11 +1,22 @@
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
-   * { font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; 
-  }
-  h1, h2, h3, h4 { 
-    text-transform: none !important; 
+  /* This section kills the theme's fonts and forces a modern look */
+  body, h1, h2, h3, h4, p, li, a {
+    font-family: 'Inter', sans-serif !important;
+    text-transform: none !important;
     letter-spacing: normal !important;
-    color: #24292e !important;
   }
+  
+  h1, h2, h3 {
+    color: #24292e !important;
+    font-weight: 700 !important;
+  }
+
+  header {
+    background-color: #24292e !important; /* Darker, more professional header */
+  }
+
   .highlight-box { 
     background-color: #f6f8fa; 
     padding: 15px; 
