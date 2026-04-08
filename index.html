@@ -57,12 +57,12 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            /* This is the magic number to center your face correctly */
-            object-position: center 22%; 
+            /* 26% is the specific adjustment to show your face/shoulders perfectly */
+            object-position: center 26%; 
             display: block;
         }
 
-        /* Restored Fade Overlay - Makes the transition smooth */
+        /* Seamless Fade Overlay - Restored and Polished */
         .hero-photo-wrapper::after {
             content: '';
             position: absolute;
@@ -75,42 +75,24 @@
         .container { padding: 80px 8%; max-width: 1200px; margin: 0 auto; }
         h2 { font-size: 2rem; font-weight: 900; margin-bottom: 30px; text-transform: uppercase; border-bottom: 8px solid #a855f7; display: inline-block; }
         .lead-text { font-size: 1.4rem; margin-bottom: 60px; color: #333; max-width: 800px; }
+        
         .job-card { margin-bottom: 40px; padding-left: 20px; border-left: 4px solid #a855f7; }
         .job-title { font-size: 1.4rem; font-weight: 900; text-transform: uppercase; }
         .company-tag { font-weight: 700; color: #a855f7; font-size: 0.85rem; margin-bottom: 10px; text-transform: uppercase; }
+
+        .proj-link {
+            color: #a855f7;
+            text-decoration: none;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 10px;
+        }
 
         /* 3. Footer */
         .footer { background-color: #000; color: #fff; padding: 80px 8%; text-align: center; }
         .btn { display: inline-block; padding: 18px 35px; background: #a855f7; color: #fff !important; text-decoration: none; font-weight: 900; text-transform: uppercase; margin: 10px; border-radius: 4px; }
 
         @media (max-width: 768px) {
-            .hero-container { height: auto; flex-direction: column; }
-            .hero-branding { padding: 60px 8%; width: 100%; }
-            .hero-photo-wrapper { width: 100%; height: 350px; }
-            .hero-photo-wrapper img { object-position: center 20%; }
-        }
-    </style>
-</head>
-<body>
-
-    <section class="hero-container">
-        <div class="hero-branding">
-            <h1 class="name-brand">RENEE<br>BARTOS</h1>
-            <p class="subtitle">Operations • Success • Technical Strategy</p>
-        </div>
-        <div class="hero-photo-wrapper">
-            <img src="wmremove-transformed.png" alt="Renee Bartos">
-        </div>
-    </section>
-
-    <div class="container">
-        <h2>THE PHILOSOPHY</h2>
-        <p class="lead-text">
-            I bridge the gap between technical complexity and business value. With 11+ years in SaaS, FinTech, and PropTech, I find the friction before it becomes a problem.
-        </p>
-
-        <h2>SELECTED IMPACT</h2>
-        <div class="job-card">
-            <p class="job-title">Technical Operations Lead</p>
-            <p class="company-tag">ReportAll USA | 2022 – 2025</p>
-            <p>Built
+            .hero-container { height: auto; flex-direction
