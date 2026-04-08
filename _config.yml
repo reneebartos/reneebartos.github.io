@@ -1,5 +1,9 @@
 remote_theme: pages-themes/minimal@v0.2.0
 title: Renee Bartos
 description: Technical Operations & Customer Success Leader
-google_analytics:
-show_downloads: false
+# This adds the LinkedIn link directly under your name on the left sidebar
+header_pages:
+  - index.md
+github:
+  is_project: false
+  repository_url: https://www.linkedin.com/in/renee-bartos
