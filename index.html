@@ -57,19 +57,18 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            /* Focuses high up on the photo to show your face */
-            object-position: center 8%; 
+            /* This is the magic number to center your face correctly */
+            object-position: center 22%; 
             display: block;
         }
 
-        /* Seamless Fade Overlay */
-       .hero-photo-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            /* No scale/zoom. 35% should center your face and show your hair/shoulders */
-            object-position: center 35%; 
-            display: block;
+        /* Restored Fade Overlay - Makes the transition smooth */
+        .hero-photo-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to right, #000000 0%, rgba(0,0,0,0) 40%);
+            pointer-events: none;
         }
 
         /* 2. Content Area */
@@ -88,7 +87,7 @@
             .hero-container { height: auto; flex-direction: column; }
             .hero-branding { padding: 60px 8%; width: 100%; }
             .hero-photo-wrapper { width: 100%; height: 350px; }
-            .hero-photo-wrapper img { object-position: center 15%; }
+            .hero-photo-wrapper img { object-position: center 20%; }
         }
     </style>
 </head>
@@ -114,21 +113,4 @@
         <div class="job-card">
             <p class="job-title">Technical Operations Lead</p>
             <p class="company-tag">ReportAll USA | 2022 – 2025</p>
-            <p>Built investigation protocols that reduced engineering escalations by 55% and accelerated resolution times by 75%.</p>
-        </div>
-        <div class="job-card">
-            <p class="job-title">Customer Operations Specialist</p>
-            <p class="company-tag">Northern Grace | 2017 – 2021</p>
-            <p>Mastered end-to-end lifecycle management for high-volume enterprise accounts with 100% data integrity.</p>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <h2 style="color: #ffffff; border-bottom-color: #a855f7;">LET'S CONNECT</h2>
-        <br><br>
-        <a href="https://www.linkedin.com/in/renee-bartos" class="btn">LinkedIn</a>
-        <a href="mailto:reneebartos@outlook.com" class="btn">Email Me</a>
-    </footer>
-
-</body>
-</html>
+            <p>Built
