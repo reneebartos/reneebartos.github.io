@@ -1,5 +1,8 @@
 remote_theme: pages-themes/architect@v0.2.0
 title: Renee Bartos
-description: Customer Success & Technical Operations Leader
+description: Technical Operations & Customer Success Leader
 google_analytics:
-show_downloads: false 
+show_downloads: false
+github:
+  is_project: false
+  repository_url: https://www.linkedin.com/in/renee-bartos
