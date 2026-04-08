@@ -9,13 +9,13 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1a1a; line-height: 1.6; }
 
-        /* 1. The Hero - Dynamic & Stable */
+        /* HERO SECTION */
         .hero-container {
             display: flex;
+            height: 50vh;
+            min-height: 400px;
             width: 100%;
             background-color: #000000;
-            /* Height is now flexible to prevent weird cropping */
-            min-height: 450px; 
             overflow: hidden;
         }
 
@@ -24,55 +24,55 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 60px 8%;
+            padding: 0 8%;
             background-color: #000000;
+            z-index: 2;
         }
 
         .name-brand {
-            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
             font-weight: 900;
-            line-height: 0.85;
+            line-height: 0.9;
             letter-spacing: -2px;
             text-transform: uppercase;
             color: #ffffff;
         }
 
         .subtitle {
-            font-size: 0.9rem;
-            margin-top: 20px;
+            font-size: 0.8rem;
+            margin-top: 15px;
             color: #a855f7;
             text-transform: uppercase;
-            letter-spacing: 4px;
+            letter-spacing: 3px;
             font-weight: 700;
         }
 
-        /* Photo Area */
         .hero-photo-wrapper {
             width: 50%;
             position: relative;
-            display: flex;
-            align-items: center; /* Centers photo vertically */
-            justify-content: center;
+            background-color: #000000;
         }
 
         .hero-photo-wrapper img {
             width: 100%;
             height: 100%;
-            /* 'Cover' ensures the box is filled, but we've increased height to show more face */
             object-fit: cover;
-            object-position: center center; 
+            object-position: center 22%; 
             display: block;
         }
 
-        /* Subtle Fade */
         .hero-photo-wrapper::after {
             content: '';
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to right, #000000 0%, rgba(0,0,0,0) 40%);
+            background: linear-gradient(to right, #000000 0%, rgba(0,0,0,0) 30%);
+            pointer-events: none;
         }
 
-        /* 2. Content */
+        /* MAIN CONTENT */
         .container { padding: 80px 8%; max-width: 1200px; margin: 0 auto; }
-        h2 { font-size: 2.2rem; font-weight: 900; margin-bottom: 35px; text-transform: uppercase; border-bottom: 10px solid #a855f7; display: inline-block; }
-        .lead-text { font
+        h2 { font-size: 2rem; font-weight: 900; margin-bottom: 30px; text-transform: uppercase; border-bottom: 8px solid #a855f7; display: inline-block; }
+        .lead-text { font-size: 1.4rem; margin-bottom: 60px; color: #333; max-width: 800px; }
+        
+        .job-card { margin-bottom: 40px; padding-left: 20px; border-left: 4px solid #a855f7; }
+        .job-title { font-size: 1.4rem; font-weight: 9
