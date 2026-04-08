@@ -98,6 +98,19 @@
         }
     </style>
 </head>
+    <script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        const btn = details.previousElementSibling;
+        if (details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+            btn.innerHTML = "Show Less ↑";
+        } else {
+            details.style.display = "none";
+            btn.innerHTML = "Deep Dive ↓";
+        }
+    }
+</script>
 <body>
 
     <div class="hero-container">
