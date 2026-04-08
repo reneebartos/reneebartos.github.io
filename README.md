@@ -88,3 +88,4 @@ I am a systems-thinker who bridges the gap between enterprise clients and engine
 * Managed **Daniel's Law** data redaction and weekly financial reconciliations with 100% accuracy.
 
 **Customer Service & Operations** *Northern Grace | Feb 2017 – Dec 2021* * Managed the end-to-end lifecycle for complex custom enterprise orders.
+* Maintained 100% accuracy in order processing through rigorous double-check protocols, significantly reducing churn.
