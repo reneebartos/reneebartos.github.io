@@ -6,7 +6,7 @@
     <title>Renee Bartos | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        /* 1. Reset */
+        /* Essential Reset */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body { 
@@ -16,24 +16,23 @@
             line-height: 1.6;
         }
 
-        /* 2. Seamless Hero Container */
+        /* 1. Hero Section */
         .hero-container {
             display: flex;
             min-height: 80vh;
             width: 100%;
-            background-color: #000;
-            position: relative;
+            background-color: #000000;
         }
 
-        /* Left Side: Branding */
+        /* Left Side */
         .hero-branding {
             width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding: 60px 8%;
-            background-color: #000;
-            z-index: 5;
+            background-color: #000000;
+            z-index: 2;
         }
 
         .name-brand {
@@ -54,12 +53,11 @@
             font-weight: 700;
         }
 
-        /* Right Side: The Photo with Fade Overlay */
+        /* Right Side with Fade */
         .hero-photo-wrapper {
             width: 50%;
             position: relative;
-            overflow: hidden;
-            background-color: #000;
+            background-color: #000000;
         }
 
         .hero-photo-wrapper img {
@@ -70,18 +68,20 @@
             display: block;
         }
 
-        /* This is the Fade: It sits ON TOP of the photo */
+        /* The Overlay: Creates the fade from the black side into the photo */
         .hero-photo-wrapper::after {
             content: '';
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            /* This gradient creates the 'Fade' from the left black box into the photo */
-            background: linear-gradient(to right, #000 0%, rgba(0,0,0,0) 40%), 
-                        linear-gradient(135deg, rgba(168, 85, 247, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Fades from pure black on the left to transparent purple on the right */
+            background: linear-gradient(to right, #000000 0%, rgba(168, 85, 247, 0.2) 50%, rgba(0,0,0,0) 100%);
             pointer-events: none;
         }
 
-        /* 3. Content Area */
+        /* 2. Body Content */
         .container { padding: 100px 8%; max-width: 1200px; }
         h2 { font-size: 2.5rem; font-weight: 900; margin-bottom: 40px; text-transform: uppercase; border-bottom: 12px solid #a855f7; display: inline-block; }
         .lead-text { font-size: 1.5rem; margin-bottom: 60px; color: #333; max-width: 800px; }
@@ -89,58 +89,6 @@
         .job-title { font-size: 1.5rem; font-weight: 900; text-transform: uppercase; }
         .company-tag { font-weight: 700; color: #a855f7; font-size: 0.9rem; margin-bottom: 15px; text-transform: uppercase; }
 
-        /* 4. Footer */
+        /* 3. Footer */
         .footer { background-color: #000; color: #fff; padding: 100px 8%; text-align: center; }
-        .btn { display: inline-block; padding: 22px 45px; background: #a855f7; color: #fff !important; text-decoration: none; font-weight: 900; text-transform: uppercase; margin: 10px; border-radius: 4px; }
-
-        /* Mobile View */
-        @media (max-width: 768px) {
-            .hero-container { flex-direction: column; }
-            .hero-branding, .hero-photo-wrapper { width: 100%; min-height: 50vh; }
-            .hero-photo-wrapper::after {
-                background: linear-gradient(to bottom, #000 0%, rgba(0,0,0,0) 30%),
-                            linear-gradient(135deg, rgba(168, 85, 247, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%);
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <section class="hero-container">
-        <div class="hero-branding">
-            <h1 class="name-brand">RENEE<br>BARTOS</h1>
-            <p class="subtitle">Operations • Success • Technical Strategy</p>
-        </div>
-        <div class="hero-photo-wrapper">
-            <img src="wmremove-transformed.png" alt="Renee Bartos">
-        </div>
-    </section>
-
-    <div class="container">
-        <h2>THE PHILOSOPHY</h2>
-        <p class="lead-text">
-            I bridge the gap between technical complexity and business value. With 11+ years in SaaS, FinTech, and PropTech, I find the friction before it becomes a problem.
-        </p>
-
-        <h2>SELECTED IMPACT</h2>
-        <div class="job-card">
-            <p class="job-title">Technical Operations Lead</p>
-            <p class="company-tag">ReportAll USA | 2022 – 2025</p>
-            <p>Built investigation protocols that reduced engineering escalations by 55% and accelerated resolution times by 75%.</p>
-        </div>
-        <div class="job-card">
-            <p class="job-title">Customer Operations Specialist</p>
-            <p class="company-tag">Northern Grace | 2017 – 2021</p>
-            <p>Mastered end-to-end lifecycle management for high-volume enterprise accounts with 100% data integrity.</p>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <h2 style="color: #ffffff; border-bottom-color: #a855f7;">LET'S CONNECT</h2>
-        <br><br>
-        <a href="https://www.linkedin.com/in/renee-bartos" class="btn">LinkedIn</a>
-        <a href="mailto:reneebartos@outlook.com" class="btn">Email Me</a>
-    </footer>
-
-</body>
-</html>
+        .btn {
