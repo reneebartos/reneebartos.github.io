@@ -4,96 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renee Bartos | Portfolio</title>
-    <meta property="og:title" content="Renee Bartos | Technical Operations & Strategy">
-    <meta property="og:description" content="11+ years bridging the gap between technical complexity and business value in SaaS, FinTech, and PropTech.">
-    <meta property="og:url" content="https://reneebartos.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://reneebartos.github.io/linkpreview.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://reneebartos.github.io/linkpreview.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1a1a; line-height: 1.6; }
-
-        .hero-container {
-            display: flex;
-            height: 450px;
-            width: 100%;
-            background-color: #000;
-            overflow: hidden;
-        }
-
-        .hero-left {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0 8%;
-            background-color: #000;
-        }
-
-        .hero-right {
-            width: 55%;
-            background: radial-gradient(circle at center, #2e1065 0%, #000000 70%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        .name-brand {
-            font-size: 3.5rem;
-            font-weight: 900;
-            line-height: 0.9;
-            color: #fff;
-            text-transform: uppercase;
-        }
-
-        .subtitle {
-            font-size: 0.8rem;
-            margin-top: 15px;
-            color: #a855f7;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 700;
-        }
-
-        .hero-right img {
-            height: 100%;
-            width: auto;
-            object-fit: contain; 
-            display: block;
-            z-index: 1;
-            filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.2));
-        }
-
-        .hero-right::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 150px;
-            height: 100%;
-            background: linear-gradient(to right, #000, rgba(46, 16, 101, 0.2), transparent);
-            z-index: 2;
-        }
-
+        .hero-container { display: flex; height: 450px; width: 100%; background-color: #000; overflow: hidden; }
+        .hero-left { width: 45%; display: flex; flex-direction: column; justify-content: center; padding: 0 8%; background-color: #000; }
+        .hero-right { width: 55%; background: radial-gradient(circle at center, #2e1065 0%, #000000 70%); display: flex; align-items: center; justify-content: center; position: relative; }
+        .name-brand { font-size: 3.5rem; font-weight: 900; line-height: 0.9; color: #fff; text-transform: uppercase; }
+        .subtitle { font-size: 0.8rem; margin-top: 15px; color: #a855f7; text-transform: uppercase; letter-spacing: 3px; font-weight: 700; }
+        .hero-right img { height: 100%; width: auto; object-fit: contain; display: block; z-index: 1; filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.2)); }
         .container { padding: 60px 8%; max-width: 1100px; margin: 0 auto; }
         h2 { font-size: 1.8rem; font-weight: 900; margin-bottom: 25px; text-transform: uppercase; border-bottom: 6px solid #a855f7; display: inline-block; }
         .lead { font-size: 1.3rem; margin-bottom: 50px; color: #333; }
-        
         .card { margin-bottom: 40px; padding: 25px; border-left: 4px solid #a855f7; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-radius: 0 8px 8px 0; }
         .card-h { font-size: 1.3rem; font-weight: 900; text-transform: uppercase; }
         .card-s { font-weight: 700; color: #a855f7; font-size: 0.8rem; margin-bottom: 8px; text-transform: uppercase; }
-
         .footer { background-color: #000; color: #fff; padding: 60px 8%; text-align: center; }
         .btn { display: inline-block; padding: 15px 30px; background: #a855f7; color: #fff !important; text-decoration: none; font-weight: 900; text-transform: uppercase; border-radius: 4px; }
-
-        @media (max-width: 768px) {
-            .hero-container { flex-direction: column; height: auto; }
-            .hero-left, .hero-right { width: 100%; }
-            .hero-right { height: 400px; padding: 20px 0; }
-        }
+        @media (max-width: 768px) { .hero-container { flex-direction: column; height: auto; } .hero-left, .hero-right { width: 100%; } .hero-right { height: 400px; padding: 20px 0; } }
     </style>
     <script>
     function toggleDetails(id) {
@@ -123,48 +52,45 @@
 
     <div class="container">
         <h2>PHILOSOPHY</h2>
-        <p class="lead">I view technical operations as a complete ecosystem where client relationships, rapid problem-solving, and data integrity are inseparable. Whether I'm engineering a workaround for a critical bug or drafting the missing documentation that scales a team, I am the 'go-to' strategist who turns operational friction into streamlined systems. I don't just identify what’s missing—I build it.</p>
+        <p class="lead">I view technical operations as a complete ecosystem where client relationships, rapid problem-solving, and data integrity are inseparable. Whether I'm engineering a workaround for a critical bug or drafting the missing documentation that scales a team, I am the 'go-to' strategist who turns operational friction into streamlined systems.</p>
 
         <h2>SELECTED IMPACT</h2>
         
         <div class="card">
             <p class="card-h">Technical Operations Lead</p>
-            <p class="card-s">ReportAll USA | Feb 2022 – May 2025</p>
-            <p>Led technical account oversight and operational fulfillment for enterprise clients, specializing in API integration workflows, CRM data integrity, and standardized departmental SOPs.</p>
+            <p class="card-s">ReportAll USA | June 2022 – January 2025</p>
+            <p>Directs high-level operational architecture and financial synchronization. Specialized in building scalable internal systems and maintaining cross-departmental data integrity.</p>
             
-            <button onclick="toggleDetails('reportall-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:10px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem;">Deep Dive ↓</button>
+            <button onclick="toggleDetails('reportall-ops-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:10px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem;">Deep Dive ↓</button>
             
-            <div id="reportall-deep" style="display:none; margin-top:15px; padding:15px; background:#f9f9f9; border-radius:4px; font-size:0.95rem; color:#444;">
-                <strong>Strategic Account Management:</strong> Directed the post-sale lifecycle for enterprise accounts, serving as the primary liaison for API renewals and technical health. Conducted usage audits to identify scaling opportunities while translating client needs into technical configurations.<br><br>
-                <strong>Lifecycle Management:</strong> Managed technical health, onboarding, and contract continuity for enterprise partners, ensuring all service milestones and API usage adjustments were met.<br><br>
-                <strong>Data Auditing:</strong> Acted as the primary auditor for Salesforce records, maintaining 100% data accuracy to eliminate discrepancies between Sales and Operations teams.<br><br>
-                <strong>Revenue Operations:</strong> Managed Stripe and QuickBooks financial workflows, overseeing payment reconciliation and state tax compliance for high-volume accounts.Directed the financial synchronization between Stripe, QuickBooks, and Salesforce to ensure data integrity for state tax compliance and automated billing cycles.<br><br>
-                <strong>Process Engineering:</strong> Authored documentation modules and "Source of Truth" SOPs across both Customer Success and Operations to standardize technical discovery and onboarding.
+            <div id="reportall-ops-deep" style="display:none; margin-top:15px; padding:15px; background:#f9f9f9; border-radius:4px; font-size:0.95rem; color:#444;">
+                <strong>Systems Architecture:</strong> Engineered the "Source of Truth" internal library (20+ modules) and Salesforce Action frameworks to standardize technical discovery.<br><br>
+                <strong>Revenue Operations:</strong> Directed the financial synchronization between Stripe, QuickBooks, and Salesforce to ensure data integrity for state tax compliance.<br><br>
+                <strong>Data Governance:</strong> Acted as the primary auditor for CRM records, maintaining 100% data accuracy to eliminate silos.
             </div>
         </div>
-        <p style="font-size: 0.7rem; font-weight: 900; color: #a855f7; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px;">↳ Concurrent Dual-Role Appointment</p>
-        <div class="card" style="margin-top: -30px; border-left-style: dashed; border-left-color: #a855f7;">
-            
-        <p style="font-size: 0.7rem; font-weight: 900; color: #a855f7; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; margin-top: -20px;">↳ Concurrent Dual-Role Appointment</p>
+
+        <p style="font-size: 0.7rem; font-weight: 900; color: #a855f7; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; margin-top: -30px; margin-left: 10px;">↳ Concurrent Dual-Role Appointment</p>
+
         <div class="card" style="margin-top: 0px; border-left-style: dashed; border-left-color: #a855f7;">
             <p class="card-h">Technical Support Specialist</p>
-            <p class="card-s">ReportAll USA | FEB 2022 – MAY 2025</p>
+            <p class="card-s">ReportAll USA | June 2022 – January 2025</p>
             <p>Managed technical troubleshooting, geospatial data validation, and enterprise account health. Acted as the frontline detective for bug forensics and parcel data integrity.</p>
             
             <button onclick="toggleDetails('reportall-support-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:10px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem;">Deep Dive ↓</button>
             
             <div id="reportall-support-deep" style="display:none; margin-top:15px; padding:15px; background:#f9f9f9; border-radius:4px; font-size:0.95rem; color:#444;">
-                <strong>Technical Liaison & Bug Diagnostics:</strong> Authored high-fidelity Jira tickets including OS/App versions, device metadata, and county-level data grabs, enabling Engineering to bypass discovery and deploy patches immediately.<br><br>
-                <strong>Geospatial Data Validation:</strong> Performed forensic audits of parcel line projections and attribute metadata against primary county/state records to identify and document mapping discrepancies.<br><br>
-                <strong>Revenue & CRM Support:</strong> Resolved complex billing lifecycles and payment discrepancies for corporate accounts, performing Stripe-to-Salesforce health audits to resolve account-level status errors.<br><br>
-                <strong>Platform Troubleshooting:</strong> Diagnosed friction points across web and mobile UI/UX, including subscription logic and multi-platform authentication failures.
+                <strong>Technical Liaison & Bug Diagnostics:</strong> Authored high-fidelity Jira tickets including OS/App versions and device metadata, enabling Engineering to bypass discovery.<br><br>
+                <strong>Geospatial Data Validation:</strong> Performed forensic audits of parcel line projections and attribute metadata against primary county/state records.<br><br>
+                <strong>Revenue & CRM Support:</strong> Resolved complex billing lifecycles and payment discrepancies, performing Stripe-to-Salesforce health audits.<br><br>
+                <strong>Platform Troubleshooting:</strong> Diagnosed friction points across web and mobile UI/UX, including subscription logic and authentication failures.
             </div>
         </div>
 
         <div class="card" style="border-left-color: #6b21a8;">
             <p class="card-h">Customer Operations Specialist</p>
             <p class="card-s">Northern Grace | 2020 – 2022</p>
-            <p>Managed full-lifecycle fulfillment for high-volume enterprise accounts, focusing on data integrity, CRM auditing, and building the department’s first internal support playbooks.</p>
+            <p>Managed full-lifecycle fulfillment for high-volume enterprise accounts, focusing on data integrity and internal support playbooks.</p>
             
             <button onclick="toggleDetails('ng-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:10px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem;">Deep Dive ↓</button>
             
