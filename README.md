@@ -1,37 +1,90 @@
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
-  /* Clean font only, no layout interference */
-  body { font-family: "Inter", -apple-system, sans-serif !important; }
-  h2 { color: #24292e; border-bottom: 1px solid #eaecef; padding-bottom: 0.3rem; }
-  .highlight { background: #f6f8fa; padding: 15px; border-left: 5px solid #0366d6; margin: 20px 0; }
+  /* 1. Global Styles - Forces the 'Web' look */
+  body, h1, h2, h3, h4, p, li, a {
+    font-family: 'Inter', sans-serif !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+  }
+  
+  h2 { 
+    color: #24292e !important; 
+    border-bottom: 2px solid #eaecef !important; 
+    padding-bottom: 8px !important;
+    margin-top: 40px !important;
+  }
+
+  /* 2. Highlight Box for Key Wins */
+  .highlight-box { 
+    background-color: #f6f8fa; 
+    padding: 20px; 
+    border-left: 6px solid #0366d6; 
+    border-radius: 4px;
+    margin: 25px 0; 
+  }
+
+  /* 3. Button Styles */
+  .btn-container { margin: 20px 0; }
+  .btn-linkedin {
+    background-color: #0077b5;
+    color: white !important;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .btn-email {
+    background-color: #24292e;
+    color: white !important;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+  }
 </style>
 
-## 💡 Professional Philosophy
-I am a systems-thinker who bridges the gap between enterprise clients and engineering teams. In my 11+ years across **SaaS, FinTech, and PropTech**, I’ve focused on precision, documentation, and reducing friction.
+# Renee Bartos
+## Technical Operations & Customer Success Leader
+**Bridging the gap between technical systems and enterprise business value.**
 
-<div class="highlight">
-<strong>Key Impact:</strong> 55% reduction in customer escalations through structured SOP authoring and deep-dive technical investigation.
+<div class="btn-container">
+  <a href="https://www.linkedin.com/in/renee-bartos" class="btn-linkedin">View LinkedIn</a>
+  <a href="mailto:reneebartos@outlook.com" class="btn-email">Email Me</a>
+</div>
+
+---
+
+## 💡 Professional Philosophy
+I am a systems-thinker who bridges the gap between enterprise clients and engineering teams. With 11+ years of experience in **SaaS, FinTech, and PropTech**, I focus on precision, high-fidelity documentation, and finding friction points before they become escalations.
+
+<div class="highlight-box">
+  <strong>The Proof:</strong> I reduced customer escalations by <strong>55%</strong> at ReportAll USA by architecting internal Knowledge Bases and technical "Deep-Dive" investigation protocols.
 </div>
 
 ---
 
 ## 🛠️ The Toolkit
-* **Operations:** System Log Analysis, SOP Authoring, Platform Migrations
-* **Success:** Enterprise Account Management, Onboarding, Retention Strategy
-* **Platforms:** Salesforce CRM, Jira, Confluence, Stripe, QuickBooks
+* **Customer Success:** Enterprise Account Management, Onboarding, Retention Strategy, QBRs, NPS/CSAT
+* **Technical Ops:** System Log Analysis, SOP Authoring, Platform Migrations, IAM/Permissions
+* **Platforms:** Salesforce CRM, Jira, Confluence, Stripe, QuickBooks, Slack, Zoom, MS Teams
 
 ---
 
-## 📂 Featured Project: Deep-Dive Investigation
-**The Challenge:** High-volume engineering escalations were slowing down resolution times.  
-**The Solution:** Designed a standardized system for replicating complex platform bugs with structured data logs.  
-**The Result:** **75% Faster** resolution and **55% fewer** escalations.
+## 📂 Featured Project: Deep-Dive Investigation Protocol
+**The Challenge:** High-volume engineering escalations were slowing down "time-to-resolution" for high-value partners.  
+**The Solution:** I designed a standardized system for replicating complex platform bugs. Instead of just passing tickets, I provided engineering with structured data logs and high-fidelity replication steps.  
+**The Result:** **75% Faster** engineering resolution times and a more efficient cross-functional feedback loop.
 
 ---
 
 ## 📈 Professional Experience
 
-**Technical Operations & Customer Success Lead** | *ReportAll USA* *2022 – 2025* Led the migration to Parlay 2.0 and managed sensitive Daniel's Law data redaction protocols with zero service interruption.
+**Technical Operations & Customer Success Lead** *ReportAll USA | Feb 2022 – May 2025* * Served as the primary technical lead for enterprise partners, managing the post-sale journey and platform adoption.
+* Led the migration of enterprise accounts to the **Parlay 2.0** platform with zero service interruption.
+* Managed **Daniel's Law** data redaction and weekly financial reconciliations with 100% accuracy.
 
-**Customer Service & Operations** | *Northern Grace* *2017 – 2021* Managed full order lifecycles and reduced client churn by optimizing fulfillment and return workflows.
-* **LinkedIn:** [linkedin.com/in/renee-bartos](https://www.linkedin.com/in/renee-bartos)
-* **Email:** [reneebartos@outlook.com](mailto:reneebartos@outlook.com)
+**Customer Service & Operations** *Northern Grace | Feb 2017 – Dec 2021* * Managed the end-to-end lifecycle for complex custom enterprise orders.
