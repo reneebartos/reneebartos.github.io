@@ -1,7 +1,19 @@
 <style>
-  body { font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #333; }
-  h1, h2, h3 { color: #2c3e50; border-bottom: none; }
-  .highlight-box { background-color: #f8f9fa; padding: 15px; border-left: 5px solid #007acc; margin: 20px 0; }
+  /* This forces the whole page and all headers to use a clean, professional font */
+  * { 
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; 
+  }
+  h1, h2, h3, h4 { 
+    text-transform: none !important; 
+    letter-spacing: normal !important;
+    color: #24292e !important;
+  }
+  .highlight-box { 
+    background-color: #f6f8fa; 
+    padding: 15px; 
+    border-left: 5px solid #0366d6; 
+    margin: 20px 0; 
+  }
 </style>
 
 # Renee Bartos
