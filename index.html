@@ -6,10 +6,11 @@
     <title>Renee Bartos | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
+        /* Base Reset */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1a1a; line-height: 1.6; }
 
-        /* 1. Cinematic Hero - Proximity Focus */
+        /* The Hero - Back to Simple Flex */
         .hero-container {
             display: flex;
             height: 50vh;
@@ -17,26 +18,30 @@
             width: 100%;
             background-color: #000000;
             overflow: hidden;
-            position: relative;
         }
 
-        .hero-branding {
-            width: 45%; /* Slightly wider to give text room but keep photo close */
+        .hero-left {
+            width: 45%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 0 4% 0 8%;
+            padding: 0 5% 0 8%;
             background-color: #000000;
-            z-index: 5;
+        }
+
+        .hero-right {
+            width: 55%;
+            position: relative;
+            background-color: #000000;
         }
 
         .name-brand {
             font-size: clamp(2.5rem, 6vw, 4.5rem);
             font-weight: 900;
             line-height: 0.9;
-            letter-spacing: -2px;
-            text-transform: uppercase;
             color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: -2px;
         }
 
         .subtitle {
@@ -48,32 +53,77 @@
             font-weight: 700;
         }
 
-        .hero-photo-wrapper {
-            width: 55%;
-            position: relative;
-            background-color: #000000;
-            overflow: hidden;
-        }
-
-        .hero-photo-wrapper img {
+        .hero-right img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            /* This centers your face in the frame */
-            object-position: center 22%; 
+            /* This moves the focus to center-top where your face is */
+            object-position: center 25%;
             display: block;
-            /* This zooms the photo slightly to pull you closer to the center line */
-            transform: scale(1.3);
-            transform-origin: left center;
         }
 
-        /* Seamless Fade Overlay - Bridges the gap between text and face */
-        .hero-photo-wrapper::after {
+        /* Simple Fade */
+        .hero-right::after {
             content: '';
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
             background: linear-gradient(to right, #000000 0%, rgba(0,0,0,0) 40%);
-            z-index: 2;
         }
 
-        /* 2. Content
+        /* Content Area */
+        .container { padding: 80px 8%; max-width: 1200px; margin: 0 auto; }
+        h2 { font-size: 2rem; font-weight: 900; margin-bottom: 30px; text-transform: uppercase; border-bottom: 8px solid #a855f7; display: inline-block; }
+        .lead-text { font-size: 1.4rem; margin-bottom: 60px; color: #333; }
+        .job-card { margin-bottom: 40px; padding-left: 20px; border-left: 4px solid #a855f7; }
+        .job-title { font-size: 1.4rem; font-weight: 900; text-transform: uppercase; }
+        .company-tag { font-weight: 700; color: #a855f7; font-size: 0.85rem; margin-bottom: 10px; text-transform: uppercase; }
+
+        /* Footer */
+        .footer { background-color: #000; color: #fff; padding: 80px 8%; text-align: center; }
+        .btn { display: inline-block; padding: 18px 35px; background: #a855f7; color: #fff !important; text-decoration: none; font-weight: 900; text-transform: uppercase; margin: 10px; border-radius: 4px; }
+
+        /* Mobile Fix */
+        @media (max-width: 768px) {
+            .hero-container { height: auto; flex-direction: column; }
+            .hero-left, .hero-right { width: 100%; }
+            .hero-right { height: 350px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero-container">
+        <div class="hero-left">
+            <h1 class="name-brand">RENEE<br>BARTOS</h1>
+            <p class="subtitle">Operations • Success • Technical Strategy</p>
+        </div>
+        <div class="hero-right">
+            <img src="wmremove-transformed.png" alt="Renee Bartos">
+        </div>
+    </section>
+
+    <div class="container">
+        <h2>THE PHILOSOPHY</h2>
+        <p class="lead-text">I bridge the gap between technical complexity and business value. With 11+ years in SaaS, FinTech, and PropTech, I find the friction before it becomes a problem.</p>
+
+        <h2>SELECTED IMPACT</h2>
+        <div class="job-card">
+            <p class="job-title">Technical Operations Lead</p>
+            <p class="company-tag">ReportAll USA | 2022 – 2025</p>
+            <p>Built investigation protocols that reduced engineering escalations by 55% and accelerated resolution times by 75%.</p>
+        </div>
+        <div class="job-card">
+            <p class="job-title">Customer Operations Specialist</p>
+            <p class="company-tag">Northern Grace | 2017 – 2021</p>
+            <p>Mastered end-to-end lifecycle management for high-volume enterprise accounts with 100% data integrity.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h2 style="color: #ffffff; border-bottom-color: #a855f7;">LET'S CONNECT</h2><br><br>
+        <a href="https://www.linkedin.com/in/renee-bartos" class="btn">LinkedIn</a>
+        <a href="mailto:reneebartos@outlook.com" class="btn">Email Me</a>
+    </footer>
+
+</body>
+</html>
