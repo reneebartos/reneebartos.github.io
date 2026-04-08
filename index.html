@@ -15,7 +15,6 @@
             line-height: 1.6;
         }
 
-        /* Split-Screen Hero */
         .hero-container {
             display: flex;
             min-height: 70vh;
@@ -49,20 +48,23 @@
             font-weight: 700;
         }
 
-        /* Fixed Image Reference */
         .hero-photo {
             width: 50%;
-            background-image: url('wmremove-transformed.png'); /* Changed to .png */
+            /* Try to load the PNG. If it fails, it stays black/purple */
+            background-image: url('wmremove-transformed.png'); 
             background-size: cover;
-            background-position: center;
+            background-position: center top; /* Focus on the face */
+            background-repeat: no-repeat;
             position: relative;
+            background-color: #1a1a1a;
         }
 
         .hero-photo::after {
             content: '';
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(135deg, rgba(168, 85, 247, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+            /* This purple overlay makes the teal in your shirt and the purple theme mesh perfectly */
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
         }
 
         .container {
@@ -117,6 +119,7 @@
         @media (max-width: 768px) {
             .hero-container { flex-direction: column; }
             .hero-branding, .hero-photo { width: 100%; min-height: 50vh; }
+            .name-brand { font-size: 4rem; }
         }
     </style>
 </head>
