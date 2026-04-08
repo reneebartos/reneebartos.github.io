@@ -9,37 +9,37 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1a1a; line-height: 1.6; }
 
+        /* 1. Cinematic Hero */
         .hero-container {
             display: flex;
-            height: 450px;
+            height: 50vh;
+            min-height: 400px;
             width: 100%;
-            background-color: #000;
+            background-color: #000000;
             overflow: hidden;
         }
 
-        .hero-left {
+        .hero-branding {
             width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding: 0 8%;
-        }
-
-        .hero-right {
-            width: 50%;
-            position: relative;
+            background-color: #000000;
+            z-index: 2;
         }
 
         .name-brand {
-            font-size: 3.5rem;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
             font-weight: 900;
             line-height: 0.9;
-            color: #fff;
+            letter-spacing: -2px;
             text-transform: uppercase;
+            color: #ffffff;
         }
 
         .subtitle {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             margin-top: 15px;
             color: #a855f7;
             text-transform: uppercase;
@@ -47,49 +47,88 @@
             font-weight: 700;
         }
 
-        .hero-right img {
+        .hero-photo-wrapper {
+            width: 50%;
+            position: relative;
+            background-color: #000000;
+        }
+
+        .hero-photo-wrapper img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center 22%;
+            /* Focuses high up on the photo to show your face */
+            object-position: center 8%; 
+            display: block;
         }
 
-        .hero-right::after {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to right, #000, transparent 40%);
+        /* Seamless Fade Overlay */
+       .hero-photo-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* No scale/zoom. 35% should center your face and show your hair/shoulders */
+            object-position: center 35%; 
+            display: block;
         }
 
-        .container { padding: 60px 8%; max-width: 1100px; margin: 0 auto; }
-        h2 { font-size: 1.8rem; font-weight: 900; margin-bottom: 25px; text-transform: uppercase; border-bottom: 6px solid #a855f7; display: inline-block; }
-        .lead { font-size: 1.3rem; margin-bottom: 50px; color: #333; }
-        .card { margin-bottom: 35px; padding-left: 20px; border-left: 4px solid #a855f7; }
-        .card-h { font-size: 1.3rem; font-weight: 900; text-transform: uppercase; }
-        .card-s { font-weight: 700; color: #a855f7; font-size: 0.8rem; margin-bottom: 8px; text-transform: uppercase; }
+        /* 2. Content Area */
+        .container { padding: 80px 8%; max-width: 1200px; margin: 0 auto; }
+        h2 { font-size: 2rem; font-weight: 900; margin-bottom: 30px; text-transform: uppercase; border-bottom: 8px solid #a855f7; display: inline-block; }
+        .lead-text { font-size: 1.4rem; margin-bottom: 60px; color: #333; max-width: 800px; }
+        .job-card { margin-bottom: 40px; padding-left: 20px; border-left: 4px solid #a855f7; }
+        .job-title { font-size: 1.4rem; font-weight: 900; text-transform: uppercase; }
+        .company-tag { font-weight: 700; color: #a855f7; font-size: 0.85rem; margin-bottom: 10px; text-transform: uppercase; }
 
-        .footer { background-color: #000; color: #fff; padding: 60px 8%; text-align: center; }
-        .btn { display: inline-block; padding: 15px 30px; background: #a855f7; color: #fff !important; text-decoration: none; font-weight: 900; text-transform: uppercase; border-radius: 4px; }
+        /* 3. Footer */
+        .footer { background-color: #000; color: #fff; padding: 80px 8%; text-align: center; }
+        .btn { display: inline-block; padding: 18px 35px; background: #a855f7; color: #fff !important; text-decoration: none; font-weight: 900; text-transform: uppercase; margin: 10px; border-radius: 4px; }
 
         @media (max-width: 768px) {
-            .hero-container { flex-direction: column; height: auto; }
-            .hero-left, .hero-right { width: 100%; }
-            .hero-right { height: 300px; }
+            .hero-container { height: auto; flex-direction: column; }
+            .hero-branding { padding: 60px 8%; width: 100%; }
+            .hero-photo-wrapper { width: 100%; height: 350px; }
+            .hero-photo-wrapper img { object-position: center 15%; }
         }
     </style>
 </head>
 <body>
 
-    <div class="hero-container">
-        <div class="hero-left">
+    <section class="hero-container">
+        <div class="hero-branding">
             <h1 class="name-brand">RENEE<br>BARTOS</h1>
-            <p class="subtitle">Operations • Success • Strategy</p>
+            <p class="subtitle">Operations • Success • Technical Strategy</p>
         </div>
-        <div class="hero-right">
-            <img src="wmremove-transformed.png">
+        <div class="hero-photo-wrapper">
+            <img src="wmremove-transformed.png" alt="Renee Bartos">
+        </div>
+    </section>
+
+    <div class="container">
+        <h2>THE PHILOSOPHY</h2>
+        <p class="lead-text">
+            I bridge the gap between technical complexity and business value. With 11+ years in SaaS, FinTech, and PropTech, I find the friction before it becomes a problem.
+        </p>
+
+        <h2>SELECTED IMPACT</h2>
+        <div class="job-card">
+            <p class="job-title">Technical Operations Lead</p>
+            <p class="company-tag">ReportAll USA | 2022 – 2025</p>
+            <p>Built investigation protocols that reduced engineering escalations by 55% and accelerated resolution times by 75%.</p>
+        </div>
+        <div class="job-card">
+            <p class="job-title">Customer Operations Specialist</p>
+            <p class="company-tag">Northern Grace | 2017 – 2021</p>
+            <p>Mastered end-to-end lifecycle management for high-volume enterprise accounts with 100% data integrity.</p>
         </div>
     </div>
 
-    <div class="container">
-        <h2>PHILOSOPHY</h2>
-        <p class="lead">I bridge the gap between technical complexity and
+    <footer class="footer">
+        <h2 style="color: #ffffff; border-bottom-color: #a855f7;">LET'S CONNECT</h2>
+        <br><br>
+        <a href="https://www.linkedin.com/in/renee-bartos" class="btn">LinkedIn</a>
+        <a href="mailto:reneebartos@outlook.com" class="btn">Email Me</a>
+    </footer>
+
+</body>
+</html>
