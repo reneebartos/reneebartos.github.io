@@ -3,6 +3,7 @@
   h3 { color: #2c3e50; font-weight: 700; margin-top: 30px; }
   .project-title { font-size: 1.2em; font-weight: bold; color: #007acc; }
 </style>
+
 # Renee Bartos
 ## Technical Operations & Customer Success Leader
 **Bridging the gap between complex technical systems and enterprise business value.**
