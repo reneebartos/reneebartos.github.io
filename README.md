@@ -1,60 +1,46 @@
-# Portfolio: Technical Operations & Customer Success
-
-### 🔗 [LinkedIn](https://www.linkedin.com/in/renee-bartos) | ✉️ [Email Me](mailto:reneebartos@outlook.com) | 📍 New York (Remote)
-
----
-
-## 🚀 Professional Overview
-I am a systems-thinker who bridges the gap between enterprise clients and engineering teams. I specialize in high-growth **B2B SaaS**, **FinTech**, and **PropTech** environments, focusing on precision, documentation, and reducing friction.
-
-> **Key Impact:** 55% reduction in customer escalations through structured SOP authoring and deep-dive technical investigation.
+# Renee Bartos
+## Technical Operations & Customer Success Leader
+**Bridging the gap between complex technical systems and enterprise business value.**
 
 ---
 
-## 🛠️ Specialized Skillset
-| Operations & Tech | Customer Success |
-| :--- | :--- |
-| **Technical SME:** System Log Analysis | **Relationship:** Enterprise Account Mgmt |
-| **Infrastructure:** SOP & Knowledge Base | **Strategy:** Retention & Onboarding |
-| **FinOps:** Stripe & QuickBooks Recon | **Metrics:** NPS, CSAT, & QBRs |
-| **Tools:** Jira, Confluence, Salesforce | **Migrations:** Platform User Audits |
+### 💡 My Philosophy
+I believe that the best Customer Success is rooted in solid Operations. In my 11+ years across **SaaS, FinTech, and PropTech**, I’ve learned that clients don't just want a "point of contact"—they want a partner who understands the technical "under the hood" mechanics of the platform. I find the friction points before they become fire drills.
 
 ---
 
-## 📈 Featured Projects
-*(Detailed experience listed below)*
+### 🛠️ The Toolkit
+* **The Hub:** Salesforce CRM, Jira, Confluence
+* **The Engine:** Stripe, QuickBooks, RevOps
+* **The Specialty:** System Log Analysis, SOP Architecture, IAM/Permissions
 
 ---
 
-### **Experience**
+### 📂 Featured Case Study: Standardizing Success
+**The Challenge:** High-volume engineering escalations were slowing down "time-to-resolution" for enterprise partners at ReportAll USA.
 
-#### **ReportAll USA** | *Technical Operations & Customer Success Lead*
-*Feb 2022 – May 2025 | Remote*
-* **Primary POC:** Managed high-value B2B enterprise partners, leading business reviews and success plans to drive platform adoption.
-* **Technical SME:** Developed "Deep-Dive" investigation protocols and Jira logs, accelerating engineering resolution times by 75%.
-* **Documentation:** Authored comprehensive SOPs and Confluence knowledge bases, reducing total escalations by 55%.
-* **FinOps:** Managed end-to-end Stripe and QuickBooks reconciliations with 100% financial data integrity.
-* **Special Projects:** Spearheaded migration to Parlay 2.0 with zero service interruption and managed Daniel's Law data redaction protocols.
+**The Solution:** I designed and implemented a **Deep-Dive Investigation Protocol**. Instead of just passing tickets to developers, I built a system for replicating complex platform bugs with structured data logs and high-fidelity replication steps.
 
-#### **Northern Grace** | *Customer Service & Operations Representative*
-*Feb 2017 – Dec 2021 | Remote*
-* **Lifecycle Management:** Managed the full order lifecycle for custom enterprise accounts from data verification through final QA.
-* **Process Improvement:** Identified friction points in return workflows, implementing adjustments that improved customer loyalty.
-* **Logistics:** Developed picking, packing, and manufacturing workflows to handle peak seasonal volumes on time.
+**The Result:**
+* **75% Faster** engineering resolution times.
+* **55% Reduction** in total customer escalations.
+* Became the de facto escalation methodology for the entire support organization.
 
 ---
 
-### **Core Skills**
+### 📈 Professional History
 
-* **Platforms:** Salesforce CRM, Jira, Confluence, Stripe, QuickBooks, Slack
-* **Success:** Enterprise Account Management, Onboarding, Retention Strategy, QBRs, NPS/CSAT
-* **Operations:** System Log Analysis, SOP Authoring, Platform Migrations, IAM/Permissions
-* **Data:** Financial Reconciliation, Contract Administration, RevOps, Data Integrity
+#### **Technical Operations & Customer Success Lead**
+**ReportAll USA** | *Feb 2022 – May 2025*
+In this dual-role, I served as both the strategic face for enterprise accounts and the technical backbone of the support operation. I led migrations (Parlay 2.0) with zero downtime and managed sensitive financial reconciliations across Stripe and QuickBooks with 100% data integrity.
+
+#### **Customer Service & Operations**
+**Northern Grace** | *Feb 2017 – Dec 2021*
+I managed the full order lifecycle for custom enterprise accounts. By identifying friction points in return workflows and implementing rigorous double-check protocols, I significantly reduced churn and improved long-term customer loyalty.
 
 ---
 
-### **Key Projects**
-
-* **Deep-Dive Investigation Protocol:** Designed a standardized system for replicating complex platform bugs for engineering handoff.
-* **Parlay 2.0 Platform Migration:** Led full technical migration of enterprise accounts including user audits and permission architecture.
-* **Knowledge Base Architecture:** Built an internal "source of truth" in Confluence to scale support operations and reduce dependency on tribal knowledge.
+### 📫 Let's Connect
+I’m always open to discussing Technical Ops, CS strategy, or the latest in SaaS.
+* **LinkedIn:** [linkedin.com/in/renee-bartos](https://www.linkedin.com/in/renee-bartos)
+* **Email:** [reneebartos@outlook.com](mailto:reneebartos@outlook.com)
