@@ -1,7 +1,5 @@
 <style>
-  /* This forces the whole page and all headers to use a clean, professional font */
-  * { 
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; 
+   * { font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; 
   }
   h1, h2, h3, h4 { 
     text-transform: none !important; 
