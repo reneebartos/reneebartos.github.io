@@ -2,18 +2,18 @@
 <html>
 <head>
 <style>
-  /* This clears GitHub's narrow margins */
+  /* This clears GitHub's narrow margins and forces full width */
   #readme, .markdown-body { 
     max-width: 100% !important; 
     padding: 0 !important; 
-    background: none !important;
+    background: #ffffff !important;
     border: none !important;
   }
   
   body { 
     margin: 0; 
     padding: 0; 
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     color: #1a1a1a;
   }
 
@@ -24,10 +24,11 @@
     padding: 100px 8%;
     width: 100%;
     box-sizing: border-box;
+    display: block;
   }
 
   .hero h1 {
-    font-size: clamp(3rem, 10vw, 6rem); /* Adjusts size based on screen */
+    font-size: 5rem;
     font-weight: 900;
     line-height: 0.85;
     margin: 0;
