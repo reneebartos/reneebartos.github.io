@@ -1,17 +1,28 @@
-# Renee Bartos
-**Technical Operations & Customer Success Leader** *B2B SaaS • FinTech • PropTech*
+# Portfolio: Technical Operations & Customer Success
 
-📍 Bellmore, New York | ✉️ [reneebartos@outlook.com](mailto:reneebartos@outlook.com) | 🔗 [LinkedIn](https://www.linkedin.com/in/renee-bartos)
+### 🔗 [LinkedIn](https://www.linkedin.com/in/renee-bartos) | ✉️ [Email Me](mailto:reneebartos@outlook.com) | 📍 New York (Remote)
 
 ---
 
-### **About**
-I am a Customer Success and Operations leader with over 11 years of experience in high-growth B2B SaaS, FinTech, and PropTech environments. I specialize in translating technical complexity into real business value — bridging the gap between enterprise clients and engineering teams with precision, empathy, and documentation that actually gets used. I'm a natural systems thinker who finds the friction before it becomes a problem.
+## 🚀 Professional Overview
+I am a systems-thinker who bridges the gap between enterprise clients and engineering teams. I specialize in high-growth **B2B SaaS**, **FinTech**, and **PropTech** environments, focusing on precision, documentation, and reducing friction.
 
-### **Impact by the Numbers**
-* **55%** Reduction in customer escalations
-* **75%** Faster bug resolution via deep-dive protocols
-* **90%** CSAT maintained across enterprise portfolios
+> **Key Impact:** 55% reduction in customer escalations through structured SOP authoring and deep-dive technical investigation.
+
+---
+
+## 🛠️ Specialized Skillset
+| Operations & Tech | Customer Success |
+| :--- | :--- |
+| **Technical SME:** System Log Analysis | **Relationship:** Enterprise Account Mgmt |
+| **Infrastructure:** SOP & Knowledge Base | **Strategy:** Retention & Onboarding |
+| **FinOps:** Stripe & QuickBooks Recon | **Metrics:** NPS, CSAT, & QBRs |
+| **Tools:** Jira, Confluence, Salesforce | **Migrations:** Platform User Audits |
+
+---
+
+## 📈 Featured Projects
+*(Detailed experience listed below)*
 
 ---
 
