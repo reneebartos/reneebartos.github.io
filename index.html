@@ -9,11 +9,11 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1a1a; line-height: 1.6; }
         .hero-container { display: flex; height: 450px; width: 100%; background-color: #000; overflow: hidden; }
-        .hero-left { width: 45%; display: flex; flex-direction: column; justify-content: center; padding: 0 8%; background-color: #000; }
-        .hero-right { width: 55%; background: radial-gradient(circle at center, #2e1065 0%, #000000 70%); display: flex; align-items: center; justify-content: center; position: relative; }
-        .name-brand { font-size: 3.5rem; font-weight: 900; line-height: 0.9; color: #fff; text-transform: uppercase; }
-        .subtitle { font-size: 0.8rem; margin-top: 15px; color: #a855f7; text-transform: uppercase; letter-spacing: 3px; font-weight: 700; }
-        .hero-right img { height: 100%; width: auto; object-fit: contain; display: block; z-index: 1; filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.2)); }
+        .hero-left { width: 50%; display: flex; flex-direction: column; justify-content: center; padding: 0 8%; background-color: #000; }
+        .hero-right { width: 50%; background: linear-gradient(to right, #000000 0%, #a855f7 100%); display: flex; align-items: center; justify-content: center; position: relative; }
+        .name-brand { font-size: 4.5rem; font-weight: 900; line-height: 0.85; color: #fff; text-transform: uppercase; letter-spacing: -2px; }
+        .subtitle { font-size: 1rem; margin-top: 15px; color: #a855f7; text-transform: uppercase; letter-spacing: 3px; font-weight: 800; }
+        .hero-right img { height: 100%; width: 100%; object-fit: cover; object-position: center 35%; display: block; }
         .container { padding: 60px 8%; max-width: 1100px; margin: 0 auto; }
         h2 { font-size: 1.8rem; font-weight: 900; margin-bottom: 25px; text-transform: uppercase; border-bottom: 6px solid #a855f7; display: inline-block; }
         .lead { font-size: 1.3rem; margin-bottom: 50px; color: #333; }
@@ -41,35 +41,24 @@
 <body>
 
     <header style="padding: 60px 0 20px 0;">
-        <div class="hero-container" style="max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 0 20px;">
-            
-            <div class="hero-left" style="flex: 1;">
-                <h1 class="name-brand" style="font-size: 3.5rem; font-weight: 900; line-height: 0.9; color: #1a1a1a; margin: 0; letter-spacing: -2px;">
-                    RENEE<br><span style="color: #a855f7;">BARTOS</span>
-                </h1>
-                <p class="subtitle" style="font-size: 1.1rem; font-weight: 700; color: #666; margin-top: 15px; text-transform: uppercase; letter-spacing: 1px;">
-                    Operations • Success • Strategy
-                </p>
-
-                <div style="margin-top: 25px; display: flex; gap: 12px;">
-                    <a href="mailto:reneebartos@outlook.com" style="text-decoration: none; color: #a855f7; border: 2px solid #a855f7; padding: 8px 18px; border-radius: 6px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s;">
-                        Email Me
-                    </a>
-                    <a href="https://www.linkedin.com/in/reneebartos" target="_blank" style="text-decoration: none; color: #a855f7; border: 2px solid #a855f7; padding: 8px 18px; border-radius: 6px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s;">
-                        LinkedIn
-                    </a>
-                </div>
-            </div>
-
-            <div class="hero-right">
-                <img src="wmremove-transformed.png" alt="Renee Bartos" style="width: 280px; height: 280px; border-radius: 50%; object-fit: cover; border: 4px solid #f3e8ff; display: block; box-shadow: 0 10px 30px rgba(168, 85, 247, 0.1);">
-            </div>
-
+        <div class="hero-container">
+    <div class="hero-left">
+        <h1 class="name-brand"><span style="color: #a855f7;">RENEE</span><br>BARTOS</h1>
+        <p class="subtitle">Operations • Success • Strategy</p>
+        
+        <div style="margin-top: 30px; display: flex; gap: 15px;">
+            <a href="mailto:reneebartos@outlook.com" style="text-decoration: none; color: white; border: 2px solid white; padding: 10px 20px; border-radius: 4px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">
+                Email Me
+            </a>
+            <a href="https://www.linkedin.com/in/reneebartos" target="_blank" style="text-decoration: none; color: white; border: 2px solid white; padding: 10px 20px; border-radius: 4px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">
+                LinkedIn
+            </a>
         </div>
-    </header>
-
-    <div class="container">
-        <h2>PHILOSOPHY</h2>
+    </div>
+    <div class="hero-right">
+        <img src="wmremove-transformed.png" alt="Renee Bartos">
+    </div>
+</div>
         <h2>PHILOSOPHY</h2>
         <p class="lead">
   I believe technical support is only <strong>50% about solving the bug</strong>—the other 50% is about <strong>supporting the human</strong> behind the screen. I view operations as a complete ecosystem where data integrity and client trust are inseparable. Whether I’m performing "back-end surgery" to fix a critical billing error or translating complex workflows into simple, executable steps, I am the bridge. My "love language" is <strong>clarity</strong>: I turn operational friction into streamlined systems and frustrated users into lifelong brand advocates.
