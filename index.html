@@ -98,17 +98,20 @@
     }
 </style>
     <script>
-    function toggleDetails(id) {
-        const details = document.getElementById(id);
-        const btn = details.previousElementSibling;
-        if (details.style.display === "none" || details.style.display === "") {
-            details.style.display = "block";
-            btn.innerHTML = "Show Less ↑";
-        } else {
-            details.style.display = "none";
-            btn.innerHTML = "Deep Dive ↓";
-        }
+function toggleDetails(id) {
+    const details = document.getElementById(id);
+    const btn = details.previousElementSibling;
+
+    if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+        // This only swaps the arrow, leaving your text alone!
+        btn.innerHTML = btn.innerHTML.replace("↓", "↑");
+    } else {
+        details.style.display = "none";
+        // This swaps it back
+        btn.innerHTML = btn.innerHTML.replace("↑", "↓");
     }
+}
     </script>
 </head>
 
