@@ -898,58 +898,95 @@ function toggleDetails(id) {
 
     <div style="border-bottom: 4px solid #a855f7; display: inline-block; margin-bottom: 10px; padding-bottom: 2px;">
 
+<div class="card" style="border-left: 4px solid #a855f7; padding: 30px; margin-bottom: 30px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+    
+    <div style="border-bottom: 4px solid #a855f7; display: inline-block; margin-bottom: 10px; padding-bottom: 2px;">
         <p class="card-h" style="margin-bottom:0; font-weight: 800; color: #333; text-transform: uppercase;">PROFESSIONAL CERTIFICATIONS</p>
-
     </div>
-
-
 
     <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.5px; margin-top: 10px; margin-bottom: 5px;">
-
         Verified Industry Credentials
-
     </p>
 
-
-
-<button onclick="toggleDetails('cert-reveal')" style="background:none; border:none; color:#9333ea; font-weight:900; cursor:pointer; padding:12px 0; font-family:inherit; text-transform:uppercase; font-size:0.8rem; display:block; text-align: left; letter-spacing: 0.5px; transition: color 0.3s ease;">
-
-    ◆ Google AI Essentials (2026) ↓
-
-</button>
-
-    
-
-    <div id="cert-reveal" style="display:none; margin-top:15px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
-
+    <button onclick="toggleDetails('cert-ai-essentials')" style="background:none; border:none; color:#9333ea; font-weight:900; cursor:pointer; padding:12px 0; font-family:inherit; text-transform:uppercase; font-size:0.8rem; display:block; text-align: left; letter-spacing: 0.5px;">
+        ◆ Google AI Essentials (2026) ↓
+    </button>
+    <div id="cert-ai-essentials" style="display:none; margin-top:15px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
-
-            
-
             <div>
-
                 <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Verified Milestone</p>
-
                 <strong>Focus:</strong> Applied mastery of high-fidelity prompt engineering and AI-driven workflow optimization to enhance operational productivity.<br><br>
-
-                
-
                 <a href="https://coursera.org/share/bf73a6e56fe274063d64708070c103e0" target="_blank" style="display: inline-block; background: #a855f7; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Verify Official Certificate</a>
-
             </div>
-
-
-
             <div style="background: #fff; padding: 10px; border: 1px solid #eee; border-radius: 8px; text-align: center;">
-
                 <img src="googleai.jpg" alt="Google AI Essentials" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-
             </div>
-
         </div>
-
     </div>
 
+    <button onclick="toggleDetails('cert-ai-pro')" style="background:none; border:none; color:#9333ea; font-weight:900; cursor:pointer; padding:12px 0; font-family:inherit; text-transform:uppercase; font-size:0.8rem; display:block; text-align: left; letter-spacing: 0.5px;">
+        ◆ Google AI Professional ↓
+    </button>
+    <div id="cert-ai-pro" style="display:none; margin-top:15px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+            <div>
+                <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Verified Milestone</p>
+                <strong>Focus:</strong> Mastered practical AI applications for data analysis, research automation, and streamlining complex business workflows.<br><br>
+                <a href="https://coursera.org/share/012dadae556b88173ec25f56170ade91" target="_blank" style="display: inline-block; background: #a855f7; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Verify Official Certificate</a>
+            </div>
+            <div style="background: #fff; padding: 10px; border: 1px solid #eee; border-radius: 8px; text-align: center;">
+                <img src="google-ai-pro.jpg" alt="Google AI Professional" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+            </div>
+        </div>
+    </div>
+
+    <button onclick="toggleDetails('cert-ai-data')" style="background:none; border:none; color:#9333ea; font-weight:900; cursor:pointer; padding:12px 0; font-family:inherit; text-transform:uppercase; font-size:0.8rem; display:block; text-align: left; letter-spacing: 0.5px;">
+        ◆ Google AI for Data Analysis ↓
+    </button>
+    <div id="cert-ai-data" style="display:none; margin-top:15px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+            <div>
+                <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Verified Milestone</p>
+                <strong>Focus:</strong> Specialized in using AI to enhance data quality, identify trends, and generate actionable insights.<br><br>
+                <a href="https://coursera.org/share/dffe35d9bb37a1b8ec11f21befda0cd8" target="_blank" style="display: inline-block; background: #a855f7; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Verify Official Certificate</a>
+            </div>
+            <div style="background: #fff; padding: 10px; border: 1px solid #eee; border-radius: 8px; text-align: center;">
+                <img src="ai-data-analysis.jpg" alt="AI for Data Analysis" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+            </div>
+        </div>
+    </div>
+
+    <button onclick="toggleDetails('cert-crm-optimize')" style="background:none; border:none; color:#9333ea; font-weight:900; cursor:pointer; padding:12px 0; font-family:inherit; text-transform:uppercase; font-size:0.8rem; display:block; text-align: left; letter-spacing: 0.5px;">
+        ◆ CRM: Analyze, Apply & Optimize ↓
+    </button>
+    <div id="cert-crm-optimize" style="display:none; margin-top:15px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+            <div>
+                <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Verified Milestone</p>
+                <strong>Focus:</strong> Expert in defining CRM foundations, analyzing customer lifecycle stages, and implementing operational automation.<br><br>
+                <a href="https://coursera.org/share/67552b61123b26e6456d5bcda44fb4a0" target="_blank" style="display: inline-block; background: #a855f7; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Verify Official Certificate</a>
+            </div>
+            <div style="background: #fff; padding: 10px; border: 1px solid #eee; border-radius: 8px; text-align: center;">
+                <img src="crm-optimize.jpg" alt="CRM Optimize" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+            </div>
+        </div>
+    </div>
+
+    <button onclick="toggleDetails('cert-sync-crm')" style="background:none; border:none; color:#9333ea; font-weight:900; cursor:pointer; padding:12px 0; font-family:inherit; text-transform:uppercase; font-size:0.8rem; display:block; text-align: left; letter-spacing: 0.5px;">
+        ◆ Syncing CRM & ESP ↓
+    </button>
+    <div id="cert-sync-crm" style="display:none; margin-top:15px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+            <div>
+                <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Verified Milestone</p>
+                <strong>Focus:</strong> Specialized training in syncing CRM data with Email Service Providers (ESP) to optimize marketing operations.<br><br>
+                <a href="https://coursera.org/share/f021507cf15685df4eb7e804d4e804b6" target="_blank" style="display: inline-block; background: #a855f7; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Verify Official Certificate</a>
+            </div>
+            <div style="background: #fff; padding: 10px; border: 1px solid #eee; border-radius: 8px; text-align: center;">
+                <img src="sync-crm.jpg" alt="Sync CRM and ESP" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+            </div>
+        </div>
+    </div>
 </div>
 
 
