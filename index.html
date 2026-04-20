@@ -1,560 +1,1035 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Renee Bartos | Portfolio</title>
+
     <meta property="og:title" content="Renee Bartos | Technical Operations & Strategy">
+
     <meta property="og:description" content="11+ years bridging the gap between technical complexity and business value.">
+
     <meta property="og:url" content="https://reneebartos.github.io/">
+
     <meta property="og:type" content="website">
+
     <meta property="og:image" content="https://reneebartos.github.io/thumbnail.png">
+
     <meta name="twitter:card" content="summary_large_image">
+
     <meta name="twitter:image" content="https://reneebartos.github.io/thumbnail.png">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
     <style>
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1a1a; line-height: 1.6; }
 
+
+
     .hero-container {
+
         display: flex;
+
         height: 450px;
+
         width: 100%;
+
         background-color: #000;
+
         overflow: hidden;
+
     }
+
+
 
     .hero-left {
+
         width: 45%;
+
         display: flex;
+
         flex-direction: column;
+
         justify-content: center;
+
         padding: 0 8%;
+
         background-color: #000;
+
     }
+
+
 
     /* RESTORED: PURPLE GLOW BACKGROUND */
+
     .hero-right {
+
         width: 55%;
+
         background: radial-gradient(circle at center, #2e1065 0%, #000000 70%);
+
         display: flex;
+
         align-items: center;
+
         justify-content: center;
+
         position: relative;
+
     }
+
+
 
     .name-brand {
+
         font-size: 3.5rem;
+
         font-weight: 900;
+
         line-height: 0.9;
+
         color: #fff;
+
         text-transform: uppercase;
+
     }
+
+
 
     .subtitle {
+
         font-size: 0.8rem;
+
         margin-top: 15px;
+
         color: #a855f7;
+
         text-transform: uppercase;
+
         letter-spacing: 3px;
+
         font-weight: 700;
+
     }
+
+
 
     /* RESTORED: WHOLE PHOTO VIEW (NOT CROPPED) */
+
     .hero-right img {
+
         height: 100%;
+
         width: auto;
+
         object-fit: contain; 
+
         display: block;
+
         z-index: 1;
+
         filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.2));
+
     }
+
+
 
     .hero-right::before {
+
         content: '';
+
         position: absolute;
+
         top: 0; left: 0;
+
         width: 150px;
+
         height: 100%;
+
         background: linear-gradient(to right, #000, rgba(46, 16, 101, 0.2), transparent);
+
         z-index: 2;
+
     }
+
+
 
     .container { padding: 60px 8%; max-width: 1100px; margin: 0 auto; }
+
     h2 { font-size: 1.8rem; font-weight: 900; margin-bottom: 25px; text-transform: uppercase; border-bottom: 6px solid #a855f7; display: inline-block; }
+
     .lead { font-size: 1.3rem; margin-bottom: 50px; color: #333; }
+
     
+
     .card { margin-bottom: 40px; padding: 25px; border-left: 4px solid #a855f7; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-radius: 0 8px 8px 0; }
+
     .card-h { font-size: 1.3rem; font-weight: 900; text-transform: uppercase; }
+
     .card-s { font-weight: 700; color: #a855f7; font-size: 0.8rem; margin-bottom: 8px; text-transform: uppercase; }
 
+
+
     .footer { background-color: #000; color: #fff; padding: 60px 8%; text-align: center; }
+
     .btn { display: inline-block; padding: 15px 30px; background: #a855f7; color: #fff !important; text-decoration: none; font-weight: 900; text-transform: uppercase; border-radius: 4px; }
 
+
+
     @media (max-width: 768px) {
+
         .hero-container { flex-direction: column; height: auto; }
+
         .hero-left, .hero-right { width: 100%; }
+
         .hero-right { height: 400px; padding: 20px 0; }
+
     }
+
 </style>
+
     <script>
+
 function toggleDetails(id) {
+
     const details = document.getElementById(id);
+
     const btn = details.previousElementSibling;
 
+
+
     if (details.style.display === "none" || details.style.display === "") {
+
         details.style.display = "block";
+
         // This only swaps the arrow, leaving your text alone!
+
         btn.innerHTML = btn.innerHTML.replace("↓", "↑");
+
     } else {
+
         details.style.display = "none";
+
         // This swaps it back
+
         btn.innerHTML = btn.innerHTML.replace("↑", "↓");
+
     }
+
 }
+
     </script>
+
 </head>
 
-<body>
+
 
 <body>
+
+
+
+<body>
+
+
 
     <div class="hero-container">
+
         <div class="hero-left">
+
             <h1 class="name-brand">RENEE<br>BARTOS</h1>
+
             <p class="subtitle">Operations • Success • Strategy</p>
+
             
+
             <div style="margin-top: 30px; display: flex; gap: 15px;">
+
                 <a href="mailto:reneebartos@outlook.com" style="text-decoration: none; color: #a855f7; border: 1.5px solid #a855f7; padding: 10px 22px; border-radius: 4px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">
+
                     Email Me
+
                 </a>
+
                 <a href="https://www.linkedin.com/in/reneebartos" target="_blank" style="text-decoration: none; color: #a855f7; border: 1.5px solid #a855f7; padding: 10px 22px; border-radius: 4px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">
+
                     LinkedIn
+
                 </a>
+
             </div>
+
         </div>
+
         <div class="hero-right">
+
             <img src="wmremove-transformed.png" alt="Renee Bartos">
+
         </div>
+
     </div>
+
+
 
     <div class="container">
+
     <h2 style="font-size: 1.5rem; font-weight: 800; color: #333; margin-bottom: 30px; letter-spacing: -0.02em;">PHILOSOPHY</h2>
+
         <p class="lead">
+
   I believe technical support is only <strong>50% about solving the bug</strong>—the other 50% is about <strong>supporting the human</strong> behind the screen. I view operations as a complete ecosystem where data integrity and client trust are inseparable. Whether I’m performing "back-end surgery" to fix a critical billing error or translating complex workflows into simple, executable steps, I am the bridge. My "love language" is <strong>clarity</strong>: I turn operational friction into streamlined systems and frustrated users into lifelong brand advocates.
+
 </p>
+
 <section id="skills" style="margin-top: 20px; margin-bottom: 40px;">
+
     <div class="card" style="border-left: 4px solid #a855f7;">
+
         
+
         <div style="border-bottom: 4px solid #a855f7; display: inline-block; margin-bottom: 10px; padding-bottom: 2px;">
+
             <p class="card-h" style="margin-bottom:0;">TECHNICAL TOOLKIT & CORE COMPETENCIES</p>
+
         </div>
+
+
 
         <p class="card-s" style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.5px;">
+
             Bridging the gap between technical operations and high-touch relationship management.
+
         </p>
+
         
+
         <button onclick="toggleDetails('skills-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:10px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem; display:block;">SKILLS ↓</button>
+
         
+
         <div id="skills-deep" style="display:none; margin-top:15px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
+
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px;">
+
                 
+
                 <div>
+
                     <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Relationship & Revenue</p>
+
                     <strong>• Strategic Account Management</strong><br>
+
                     <strong>• Client Retention & Churn Mitigation</strong><br>
+
                     <strong>• Consultative Upselling & Expansion</strong><br>
+
                     <strong>• High-Touch Customer Experience</strong><br>
+
                     <strong>• Enterprise Client Advocacy</strong>
+
                 </div>
 
+
+
                 <div>
+
                     <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Technical Support</p>
+
                     <strong>• Tier 1–3 Technical Support</strong><br>
+
                     <strong>• Escalation & Resolution Management</strong><br>
+
                     <strong>• Bug Diagnostics & Reproduction</strong><br>
+
                     <strong>• GIS Data Forensics & Validation</strong><br>
+
                     <strong>• Technical SME Consulting</strong>
+
                 </div>
 
+
+
                 <div>
+
                     <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Systems & Software</p>
+
                     <strong>• Salesforce / Service Cloud</strong><br>
+
                     <strong>• Stripe Payment Gateway</strong><br>
+
                     <strong>• QuickBooks Online</strong><br>
+
                     <strong>• Jira / Confluence</strong><br>
+
                     <strong>• Geospatial Data Management</strong>
+
                 </div>
 
+
+
                 <div>
+
                     <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Operational Strategy</p>
+
                     <strong>• Revenue Operations (RevOps)</strong><br>
+
                     <strong>• CRM Data Governance</strong><br>
+
                     <strong>• SaaS System Migration</strong><br>
+
                     <strong>• SOP Architecture</strong><br>
+
                     <strong>• Cross-Functional Liaison</strong>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 </section>
+
         <h2>PROFESSIONAL JOURNEY & IMPACT</h2>
+
         
+
 <div class="card">
+
     <p class="card-h">Technical Operations Lead</p>
+
     <p class="card-s">ReportAll USA | Remote | FEB. 2022 - MAY 2025 </p>
+
+
 
     <p><strong>Strategic Impact:</strong> Orchestrated cross-departmental "technical surgery" to resolve systemic revenue failures and data silos. Serving as the primary bridge between Enterprise clients and Engineering, I transformed complex service-level gaps into high-fidelity product roadmaps while maintaining a 100% platform adoption rate.</p>
 
+
+
     <button onclick="toggleDetails('reportall-ops-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:10px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem; display:block;">Deep Dive ↓</button>
 
+
+
     <div id="reportall-ops-deep" style="display:none; margin-top:15px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; border-left: 4px solid #a855f7;">
+
         
+
         <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+
             <li style="margin-bottom: 20px;">
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">Strategic Client Partnership & Relationship Growth</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Served as the primary POC and operational partner for corporate accounts, leading technical onboarding and health checks to ensure long-term renewals.</li>
+
                     <li><em>Deep Dive: Driven by a commitment to authentic relationship growth, I successfully converted high-risk churn scenarios into brand advocates through proactive crisis management—leading to direct commendations from clients to ownership.</em></li>
+
                 </ul>
+
             </li>
 
+
+
             <li style="margin-bottom: 20px;">
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">User Enablement & "Frustration-Free" Support</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Acted as the primary Subject Matter Expert (SME), ensuring clients could effectively utilize and master the platform to find maximum value.</li>
+
                     <li><em>Deep Dive: Translated complex GIS workflows into personalized, executable steps for non-technical users; eliminated operational frustration through patient, one-on-one consultation, resulting in 100% platform adoption.</em></li>
+
                 </ul>
+
             </li>
 
+
+
             <li style="margin-bottom: 20px;">
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">Revenue Operations & Systems "Surgery"</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Engineered the synchronization between Stripe, QuickBooks, and Salesforce to ensure data integrity for state tax compliance and automated billing cycles.</li>
+
                     <li><em>Deep Dive: Personally intervened in systemic software failures, performing backend database reconciliations and manual billing overrides to maintain 100% service continuity.</em></li>
+
                 </ul>
+
             </li>
 
+
+
             <li style="margin-bottom: 20px;">
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">Systems Architecture & Cross-Departmental Liaison</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Authored "Source of Truth" SOPs and served as the "voice of the client" in internal meetings to translate customer friction into prioritized feature requests.</li>
+
                     <li><em>Deep Dive: Converted recurring service-level gaps into actionable Jira tickets and engineering frameworks, streamlining the bug-reproduction process.</em></li>
+
                 </ul>
+
             </li>
+
+
 
             <li>
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">Sales Engineering & Data Governance</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Partnered with the Sales team to deliver high-impact technical product demonstrations while maintaining 100% CRM data accuracy as the primary auditor.</li>
+
                 </ul>
+
             </li>
+
         </ul>
+
     </div> </div>
+
     
+
              
+
   <p style="font-size: 0.7rem; font-weight: 900; color: #a855f7; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; margin-top: 20px; margin-left: 10px;">
+
     ↳ Concurrent Dual-Role Appointment
+
 </p>
 
+
+
 <div class="card" style="margin-top: 10px; border-left-style: dashed; border-left-color: #a855f7;">
+
     <p class="card-h">Technical Support Specialist</p>
+
     <p class="card-s">ReportAll USA | Remote | FEB. 2022 – JAN. 2025</p>
+
+
 
     <p><strong>Strategic Impact:</strong> Managed the full resolution lifecycle for Tiers 1–3, serving as the final point of escalation for complex system failures while maintaining a "human-first" standard for response speed and transparency.</p>
 
+
+
     <button onclick="toggleDetails('reportall-support-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:10px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem; display:block;">Deep Dive ↓</button>
 
+
+
     <div id="reportall-support-deep" style="display:none; margin-top:15px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; border-left: 4px solid #a855f7;">
+
         <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+
             <li style="margin-bottom: 20px;">
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">Advanced Technical Resolution (Tiers 1–3)</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Acted as the ultimate "safety net" for the support team, diagnosing and resolving complex Tier 3 technical escalations.</li>
+
                     <li><em>Deep Dive: Implemented a "No Customer Left Behind" philosophy; maintained daily touchpoints during multi-day engineering fixes to ensure users felt prioritized.</em></li>
+
                 </ul>
+
             </li>
+
             <li style="margin-bottom: 20px;">
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">Technical Liaison & Bug Diagnostics</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Authored high-fidelity Jira tickets (including OS/App versions and county-level data grabs) to accelerate resolution times.</li>
+
                     <li><em>Deep Dive: Dramatically reduced the feedback loop by performing initial log analysis and system testing before engineering escalation.</em></li>
+
                 </ul>
+
             </li>
+
             <li style="margin-bottom: 20px;">
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">Geospatial Data Validation</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Performed forensic audits of parcel line projections and attribute metadata against primary records to identify mapping discrepancies.</li>
+
                 </ul>
+
             </li>
+
             <li>
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">Revenue & CRM Integrity</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Managed complex billing lifecycles for corporate and single-user accounts, resolving payment discrepancies and performing Stripe-to-Salesforce health audits.</li>
+
                 </ul>
+
             </li>
+
         </ul>
+
     </div>
+
 </div>
 
+
+
 <div class="card">
+
     <p class="card-h">Operations & Customer Service </p>
+
     <p class="card-s">Northern Grace | Hybrid | FEB. 2016 – DEC. 2021 </p>
+
+
 
     <p><strong>Strategic Impact:</strong> Architected and scaled a custom production enterprise from the ground up, synchronizing complex supply chain logistics with a high-touch, consultative client experience. Managed the full operational lifecycle—ensuring 99% order accuracy and 100% data integrity across all channels.</p>
 
+
+
     <button onclick="toggleDetails('ng-ops-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:10px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem; display:block;">Deep Dive ↓</button>
 
+
+
     <div id="ng-ops-deep" style="display:none; margin-top:15px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; border-left: 4px solid #a855f7;">
+
         <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+
             <li style="margin-bottom: 20px;">
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">Consultative Relationship Architecture & Customization</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Developed a standardized client intake process to translate highly subjective custom visions into precise technical production specs.</li>
+
                     <li><em>Deep Dive: Leveraged active listening to build deep relationships, allowing for personalized product results that increased customer loyalty.</em></li>
+
                 </ul>
+
             </li>
+
             <li style="margin-bottom: 20px;">
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">Customer Data Governance & CRM Management</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Managed a comprehensive database of customer profiles, including contact information, multi-year order history, and fulfillment logistics.</li>
+
                 </ul>
+
             </li>
+
             <li style="margin-bottom: 20px;">
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">Agile Operations & Supply Chain</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Managed the full procurement cycle for specialized raw materials; optimized stock levels to eliminate production bottlenecks and reduce material waste.</li>
+
                 </ul>
+
             </li>
+
             <li style="margin-bottom: 20px;">
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">Lifecycle Production & Fulfillment Logistics</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Architected rigorous QC and shipping workflows (multi-carrier logistics), ensuring 99% order accuracy during peak seasonal periods.</li>
+
                 </ul>
+
             </li>
+
             <li>
+
                 <strong style="display: block; color: #333; margin-bottom: 5px;">Brand Growth & Digital Engagement</strong>
+
                 <ul style="list-style-type: disc; padding-left: 20px; color: #444;">
+
                     <li>Leveraged multi-channel social media strategies to synchronize production updates with marketing goals and organic lead generation.</li>
+
                 </ul>
+
             </li>
+
         </ul>
+
     </div>
+
 </div>
+
 <section id="projects" style="margin-top: 50px;">
+
     <h2 style="font-size: 1.5rem; font-weight: 800; color: #333; margin-bottom: 30px; letter-spacing: -0.02em;">Strategic Projects & Operational Initiatives</h2>
+
     
+
     <div class="card">
+
         <div style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+
             <p class="card-h" style="margin-bottom:5px;">Enterprise Platform Migration & Systems Integration</p>
+
             <p class="card-s">ReportAll USA |</p>
+
          <button onclick="toggleDetails('migration-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:5px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem;">View Case Study ↓</button>
+
             
+
             <div id="migration-deep" style="display:none; margin-top:10px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
+
                 <p style="margin-bottom: 10px; color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px;">Project Case Study</p>
+
                 <p style="margin-bottom: 15px;"><strong>Context & Goal:</strong><br>
+
                 The "Parlay 2.0" enterprise tier was managed via a legacy Excel-based system, requiring manual provisioning for every user addition or removal. The goal was to migrate 150+ corporate accounts to a new self-serve UI, eliminating operational bottlenecks.</p>
 
+
+
                 <p style="margin-bottom: 15px;"><strong>The Process:</strong><br>
+
                 • <strong>Data Audit:</strong> Cross-referenced legacy spreadsheets with Salesforce records.<br>
+
                 • <strong>Strategic Outreach:</strong> Developed custom communication funnels tailored to account renewal dates.<br>
+
                 • <strong>Technical Consulting:</strong> Facilitated virtual demos for enterprise admins to address "change fatigue."<br>
+
                 • <strong>Risk Management:</strong> Identified non-responsive "stragglers" and implemented a proactive follow-up cadence.</p>
 
+
+
                 <p style="margin-bottom: 15px;"><strong>The Solution:</strong><br>
+
                 Executed a zero-downtime, manual backend migration for every confirmed user seat. Transitioned the company from a "heavy-lifting" service model to a modern SaaS self-serve architecture.</p>
 
+
+
                 <p><strong>The Outcome:</strong><br>
+
                 • <strong>Net-Positive Revenue Retention:</strong> Account value grew as clients identified needs for additional seats.<br>
+
                 • <strong>Operational Scalability:</strong> Reduced manual admin overhead by nearly 100% for migrated accounts.</p>
+
             </div>
+
         </div>
 
+
+
         <div style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+
             <p class="card-h" style="margin-bottom:5px;">API Infrastructure Audit & Contractual Data Synchronization</p>
+
             <p class="card-s">ReportAll USA | Technical SME & Operations | </p>
+
             <button onclick="toggleDetails('api-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:5px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem;">View Case Study ↓</button>
+
             
+
             <div id="api-deep" style="display:none; margin-top:10px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
+
                 <p style="margin-bottom: 10px; color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px;">Project Case Study</p>
+
                 <p style="margin-bottom: 15px;"><strong>Context & Goal:</strong><br>
+
                 API and Featured Service accounts were historically tracked across disparate spreadsheets. The goal was to perform a comprehensive audit, synchronize data with Salesforce, and establish a centralized contract filing system.</p>
 
+
+
                 <p style="margin-bottom: 15px;"><strong>The Process:</strong><br>
+
                 • <strong>Cross-System Verification:</strong> Mapped API user keys and tiered pricing models to active Salesforce records.<br>
+
                 • <strong>CRM Data Enrichment:</strong> Identified multi-product usage to ensure services were accurately reflected in the CRM.<br>
+
                 • <strong>Stakeholder Alignment:</strong> Verified POCs for Sales and corrected renewal dates to prevent billing lapses.</p>
 
+
+
                <p style="margin-bottom: 15px;"><strong>The Solution:</strong><br>
+
                 Developed an internal "Source of Truth" to facilitate the Salesforce update and engineered a standardized filing system for multi-product contracts.</p>
 
+
+
                 <p><strong>The Outcome:</strong><br>
+
                 • <strong>100% Data Accuracy:</strong> Audited and synchronized all API account details with zero errors.<br>
+
                 • <strong>Cross-Functional Accessibility:</strong> Created an infrastructure utilized by executive leadership to reduce retrieval time.</p>
+
             </div>
+
         </div>
+
+
 
         <div style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+
             <p class="card-h" style="margin-bottom:5px;">Financial Systems Synchronization & Revenue Integrity Audit</p>
+
             <p class="card-s">ReportAll USA | Operations & Billing </p>
+
             <button onclick="toggleDetails('billing-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:5px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem;">View Case Study ↓</button>
+
             
+
             <div id="billing-deep" style="display:none; margin-top:10px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
+
                 <p style="margin-bottom: 10px; color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px;">Project Case Study</p>
+
                 <p style="margin-bottom: 15px;"><strong>Context & Goal:</strong><br>
+
                 The QuickBooks environment contained years of "paused" invoices and outdated metadata. The goal was a top-to-bottom audit to eliminate clutter and ensure 100% tax and contact compliance.</p>
 
+
+
                 <p style="margin-bottom: 15px;"><strong>The Process:</strong><br>
+
                 • <strong>Revenue Forensic Audit:</strong> Vetted hundreds of invoices by cross-referencing the platform, Salesforce, and Service Cloud logs.<br>
+
                 • <strong>Data Cleansing:</strong> Executed a massive cleanup of the QuickBooks database, archiving decommissioned accounts.<br>
+
                 • <strong>Compliance Update:</strong> Audited and applied correct tax formulas for state-level compliance.</p>
 
+
+
                 <p style="margin-bottom: 15px;"><strong>The Solution:</strong><br>
+
                 Transformed QuickBooks from a legacy database into a streamlined financial tool, creating a unified billing workflow that eliminated manual guesswork.</p>
 
+
+
                 <p><strong>The Outcome:</strong><br>
+
                 • <strong>Zero-Error Billing Environment:</strong> Sanitized the pipeline so only verified accounts remained in the cycle.<br>
+
                 • <strong>Executive Visibility:</strong> Provided leadership with a clean snapshot of true recurring revenue.</p>
+
             </div>
+
         </div>
+
+
 
         <div style="padding-bottom: 5px;">
+
             <p class="card-h" style="margin-bottom:5px;">Payment Gateway Optimization & Revenue Assurance</p>
+
             <p class="card-s">ReportAll USA | Operations & Billing</p>
+
             <button onclick="toggleDetails('stripe-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:5px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem;">View Case Study ↓</button>
+
             
+
             <div id="stripe-deep" style="display:none; margin-top:10px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
+
                 <p style="margin-bottom: 10px; color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px;">Project Case Study</p>
+
                 <p style="margin-bottom: 15px;"><strong>Context & Goal:</strong><br>
+
                 Stripe had a backlog of failed transactions and duplicate profiles. The goal was to prevent double-billing, reduce chargeback risks, and recover stalled revenue.</p>
 
+
+
                 <p style="margin-bottom: 15px;"><strong>The Process:</strong><br>
+
                 • <strong>Subscription Reconciliation:</strong> Conducted a line-by-line audit to isolate duplicate corporate and individual subscriptions.<br>
+
                 • <strong>Failure Remediation:</strong> Investigated "failed" statuses and cleared the backlog to reflect accurate revenue.<br>
+
                 • <strong>Proactive VIP Outreach:</strong> Established an auditing cadence to contact administrators regarding expiring payment methods.</p>
 
+
+
                 <p style="margin-bottom: 15px;"><strong>The Solution:</strong><br>
+
                 Established a recurring SOP for failed payments, creating a frictionless environment that protected the client experience.</p>
 
+
+
                 <p><strong>The Outcome:</strong><br>
+
                 • <strong>Involuntary Churn Prevention:</strong> Eliminated service interruptions for enterprise clients by managing expired payments proactively.<br>
+
                 • <strong>Revenue Clarity:</strong> Provided leadership with a highly accurate dashboard of true recurring revenue.</p>
+
             </div>
+
         </div>
+
     </div>
+
 <section id="development" style="margin-top: 50px; margin-bottom: 40px;">
+
     <h2 style="font-size: 1.5rem; font-weight: 800; color: #333; margin-bottom: 30px; letter-spacing: -0.02em;">Continuous Learning & Certifications</h2>
 
+
+
 <div class="card" style="border-left: 4px solid #a855f7; padding: 30px; margin-bottom: 30px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+
     
+
     <div style="border-bottom: 4px solid #a855f7; display: inline-block; margin-bottom: 10px; padding-bottom: 2px;">
+
         <p class="card-h" style="margin-bottom:0; font-weight: 800; color: #333; text-transform: uppercase;">PROFESSIONAL CERTIFICATIONS</p>
+
     </div>
+
+
 
     <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.5px; margin-top: 10px; margin-bottom: 5px;">
+
         Verified Industry Credentials
+
     </p>
 
+
+
 <button onclick="toggleDetails('cert-reveal')" style="background:none; border:none; color:#9333ea; font-weight:900; cursor:pointer; padding:12px 0; font-family:inherit; text-transform:uppercase; font-size:0.8rem; display:block; text-align: left; letter-spacing: 0.5px; transition: color 0.3s ease;">
+
     ◆ Google AI Essentials (2026) ↓
+
 </button>
+
     
-<div id="cert-reveal" style="display:none; margin-top:15px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
-    
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-        <div>
-            <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Verified Milestone</p>
-            <strong>Google AI Essentials:</strong> Applied mastery of high-fidelity prompt engineering and AI-driven workflow optimization[cite: 323, 431].<br><br>
-            <a href="https://coursera.org/share/bf73a6e56fe274063d64708070c103e0" target="_blank" style="display: inline-block; background: #a855f7; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Verify Official Certificate</a>
-        </div>
-        <div style="background: #fff; padding: 10px; border: 1px solid #eee; border-radius: 8px; text-align: center;">
-            <img src="googleai.jpg" alt="Google AI Essentials" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-        </div>
-    </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-        <div>
-            <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Verified Milestone</p>
-            <strong>Google AI Professional:</strong> Mastering AI-driven research, data analysis, and advanced automation to streamline complex business workflows[cite: 432].<br><br>
-            <a href="#" target="_blank" style="display: inline-block; background: #a855f7; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Verify Official Certificate</a>
-        </div>
-        <div style="background: #fff; padding: 10px; border: 1px solid #eee; border-radius: 8px; text-align: center;">
-            <img src="google-ai-pro.jpg" alt="Google AI Professional" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-        </div>
-    </div>
+    <div id="cert-reveal" style="display:none; margin-top:15px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-        <div>
-            <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Verified Milestone</p>
-            <strong>AI for Data Analysis:</strong> Specialized in leveraging AI to enhance data quality, identify trends, and generate actionable insights[cite: 433].<br><br>
-            <a href="#" target="_blank" style="display: inline-block; background: #a855f7; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Verify Official Certificate</a>
-        </div>
-        <div style="background: #fff; padding: 10px; border: 1px solid #eee; border-radius: 8px; text-align: center;">
-            <img src="ai-data-analysis.jpg" alt="AI for Data Analysis" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-        </div>
-    </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-        <div>
-            <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Verified Milestone</p>
-            <strong>CRM: Analyze, Apply & Optimize:</strong> Expertise in defining CRM foundations and implementing operational automation for the customer lifecycle[cite: 434].<br><br>
-            <a href="#" target="_blank" style="display: inline-block; background: #a855f7; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Verify Official Certificate</a>
-        </div>
-        <div style="background: #fff; padding: 10px; border: 1px solid #eee; border-radius: 8px; text-align: center;">
-            <img src="crm-optimize.jpg" alt="CRM Optimize" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-        </div>
-    </div>
+            
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
-        <div>
-            <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Verified Milestone</p>
-            <strong>Syncing CRM & ESP:</strong> Focused on architecting data flow to ensure high-fidelity customer communication across platforms[cite: 437].<br><br>
-            <a href="#" target="_blank" style="display: inline-block; background: #a855f7; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Verify Official Certificate</a>
+            <div>
+
+                <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Verified Milestone</p>
+
+                <strong>Focus:</strong> Applied mastery of high-fidelity prompt engineering and AI-driven workflow optimization to enhance operational productivity.<br><br>
+
+                
+
+                <a href="https://coursera.org/share/bf73a6e56fe274063d64708070c103e0" target="_blank" style="display: inline-block; background: #a855f7; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Verify Official Certificate</a>
+
+            </div>
+
+
+
+            <div style="background: #fff; padding: 10px; border: 1px solid #eee; border-radius: 8px; text-align: center;">
+
+                <img src="googleai.jpg" alt="Google AI Essentials" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+
+            </div>
+
         </div>
-        <div style="background: #fff; padding: 10px; border: 1px solid #eee; border-radius: 8px; text-align: center;">
-            <img src="sync-crm.jpg" alt="Sync CRM" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-        </div>
+
     </div>
 
 </div>
 
+
+
     <div class="card" style="border-left: 4px solid #a855f7; padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+
         <div style="border-bottom: 4px solid #a855f7; display: inline-block; margin-bottom: 10px; padding-bottom: 2px;">
+
             <p class="card-h" style="margin-bottom:0; font-weight: 800; color: #333; text-transform: uppercase;">PROFESSIONAL EVOLUTION</p>
+
         </div>
+
+
 
         <p class="card-s" style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.5px;">
+
             Skills Acquisition & Industry AI Integration
+
         </p>
 
+
+
         <button onclick="toggleDetails('learning-deep')" style="background:none; border:none; color:#a855f7; font-weight:900; cursor:pointer; padding:10px 0; font-family:inherit; text-transform:uppercase; font-size:0.75rem; display:block;">View Current Focus ↓</button>
+
         
+
         <div id="learning-deep" style="display:none; margin-top:15px; padding:20px; background:#f9f9f9; border-radius:8px; font-size:0.95rem; color:#444; line-height:1.6;">
+
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+
                 <div>
+
                     <p style="color: #a855f7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 10px;">Current Focus</p>
+
                     <strong>• Account Management & Salesforce Design:</strong> Mastering architectural standards for scalable CRM environments and Account Management workflows.<br><br>
+
                     <strong>• Generative AI for Customer Success:</strong> Implementing AI-driven strategies to enhance client retention and proactive support cycles.<br><br>
+
                     <strong>• AI for Data Analysis:</strong> Leveraging generative AI to transform raw datasets into high-fidelity visual insights and predictive analytics for proactive decision-making.<br><br>
+
                 </div>
 
+
+
                 <div style="background: #fff; padding: 20px; border: 1px solid #eee; border-radius: 8px; align-self: start;">
+
                     <p style="font-size: 0.9rem; color: #666; font-style: italic; line-height: 1.6; margin: 0;">
+
                         "My approach to professional growth is driven by the immediate needs of the systems I manage. I prioritize hands-on mastery of the tools—from legacy databases to Generative AI—that secure revenue and streamline client experiences."
+
                     </p>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 </section>
+
   
+
 </div> </div> </div> <footer style="margin-top: 80px; padding: 60px 20px; border-top: 1px solid #f0f0f0; text-align: center; font-family: inherit; clear: both; width: 100%;">
+
     <h3 style="font-size: 1.4rem; font-weight: 700; color: #333; margin-bottom: 30px; letter-spacing: -0.02em;">Let's Connect</h3>
+
     <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
+
         <a href="https://www.linkedin.com/in/reneebartos" target="_blank" style="text-decoration: none; color: #a855f7; font-weight: 700; font-size: 1rem; border: 2px solid #a855f7; padding: 12px 28px; border-radius: 50px; display: inline-block;">Connect on LinkedIn</a>
+
         <a href="mailto:reneebartos@outlook.com" style="text-decoration: none; color: #a855f7; font-weight: 700; font-size: 1rem; border: 2px solid #a855f7; padding: 12px 28px; border-radius: 50px; display: inline-block;">Email Me Directly</a>
+
     </div>
+
     <p style="margin-top: 60px; font-size: 0.75rem; color: #bbb; letter-spacing: 2px; text-transform: uppercase;">
+
         © 2026 Renee Bartos • Solving Complex Problems with a Human Touch
+
     </p>
+
 </footer>
