@@ -194,18 +194,42 @@
 
 
 
-    @media (max-width: 768px) {
+   @media (max-width: 768px) {
+    /* Existing Layout Fixes */
+    .hero-container { flex-direction: column; height: auto; }
+    .hero-left, .hero-right { width: 100%; }
+    .hero-right { height: 400px; padding: 20px 0; }
 
-        .hero-container { flex-direction: column; height: auto; }
-
-        .hero-left, .hero-right { width: 100%; }
-
-        .hero-right { height: 400px; padding: 20px 0; }
-
+    /* NEW: Fix the 'Operations • Support' Banner */
+    .subtitle {
+        font-size: 1.4rem !important;    /* Shrinks the tall letters for small screens */
+        letter-spacing: 0px !important;  /* Stops overlapping */
+        word-spacing: 2px !important;    /* Adds breathing room */
+        white-space: normal !important;  /* Allows wrapping if needed */
+        line-height: 1.2 !important;
+        text-align: center;
+        display: block;
+        margin: 10px auto !important;
     }
 
-</style>
+    /* NEW: Fix Section Headers (Journey, Projects, etc.) */
+    div[style*="border-left"] p[style*="font-size: 2.2rem"] {
+        font-size: 1.4rem !important;    /* Prevents giant text overflow */
+        line-height: 1.1 !important;
+    }
 
+    /* NEW: Adjust the purple 'Spine' padding for mobile */
+    div[style*="padding-left: 30px"] {
+        padding-left: 15px !important;   /* Matches smaller mobile margins */
+    }
+
+    .card {
+        padding: 20px 15px !important;   /* Gives text more room on small screens */
+    }
+}
+
+</style>
+  
     <script>
 
 function toggleDetails(id) {
