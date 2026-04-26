@@ -242,19 +242,22 @@ p[style*="font-family: 'Carattere'"] {
     /* 4. Fix the 'Operations • Support' Banner */
 .subtitle {
         font-size: 1.5rem !important; 
-        letter-spacing: 0px !important; 
-        text-transform: uppercase;
-        font-weight: 900;
-        color: #a855f7;
-        text-align: center !important;
+        color: #a855f7 !important;
+        font-weight: 900 !important;
+        text-transform: uppercase !important;
+        
+        /* THE RESET: This forces it to be a clean block in the center */
         display: block !important;
-        width: 100% !important;
-        margin: 10px auto !important; 
-        padding: 0 !important;
-        left: 0 !important;
-        margin-left: -2px !important; /* The 'Nudge' to fix the right-lean */
-        white-space: normal !important;
+        width: 100vw !important; /* Uses the full Viewport Width */
+        margin-left: -20px !important; /* This cancels out the parent container's padding */
+        text-align: center !important;
+        
+        /* Clean up the text spacing */
+        letter-spacing: 0px !important;
+        white-space: nowrap !important; /* Forces it to stay on one line if possible */
         line-height: 1.2 !important;
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
     }
 
     /* 5. Cleanup for cards and spine */
