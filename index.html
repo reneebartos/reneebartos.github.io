@@ -241,15 +241,20 @@ p[style*="font-family: 'Carattere'"] {
 
     /* 4. Fix the 'Operations • Support' Banner */
 .subtitle {
-        font-size: 1.5rem !important; /* This is the max 'sweet spot' for mobile */
-        letter-spacing: 0.5px !important; /* Resets the tight squeeze */
-        word-spacing: 2px !important;
-        line-height: 1.2 !important;
-        white-space: normal !important; /* This allows it to wrap to 2 lines if needed */
+        font-size: 1.5rem !important; 
+        letter-spacing: 0px !important; 
+        text-transform: uppercase;
+        font-weight: 900;
+        color: #a855f7;
         text-align: center !important;
         display: block !important;
         width: 100% !important;
-        margin: 10px auto !important;
+        margin: 10px auto !important; 
+        padding: 0 !important;
+        left: 0 !important;
+        margin-left: -2px !important; /* The 'Nudge' to fix the right-lean */
+        white-space: normal !important;
+        line-height: 1.2 !important;
     }
 
     /* 5. Cleanup for cards and spine */
